@@ -74,7 +74,7 @@ Oracle NetSuite AI Foundations Associate | Oracle NetSuite BI and Reporting Asso
 
 ### Beyond the code
 
-My documentary photography has been published by the United Nations(https://news.un.org/sw/story/2024/02/1171737), WHO (https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&isAllowed=y) & EGPAF (https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf). Same instinct as the engineering work: understand the people before you build the system.
+My documentary photography has been published by the [United Nations](https://news.un.org/sw/story/2024/02/1171737), [WHO](https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&isAllowed=y), and [EGPAF](https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf). Same instinct as the engineering work: understand the people before you build the system.
 
 ---
 
