@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# AI crawlers, explicitly welcomed for AEO/GEO discoverability
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://gibson.seepu.co.ke/sitemap.xml
