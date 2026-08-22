@@ -13,7 +13,7 @@ Most AI engineering happens on fast connections with cheap compute and mature pa
 ## What I build
 
 **20 countries · Enterprise systems at multi-country scale**
-NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 1 and Tier 2 support for 2,000+ users across 12 African countries at EGPAF.
+NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 & 3 support for 2,000+ users across 12 African countries at EGPAF.
 
 **Live, not notebooks · AI in production**
 Anthropic Messages API powering a live order assistant with catalog, category, pricing, and checkout tools. Cloudflare Workers running an LLM visitor assistant at the edge. Content and support pipelines on GPT-4 that cut draft time by 70 percent.
