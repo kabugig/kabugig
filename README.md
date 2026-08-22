@@ -26,13 +26,13 @@ Technical SEO including Core Web Vitals, crawlability, and site migrations. GEO 
 
 ### Selected work
 
-**[MBH](https://github.com/kabugig/MBH)** | Next.js 16, React 19, TypeScript, Sanity 6, Anthropic SDK, Vercel
+**[MBH](https://www.muthonibakehouse.co.ke/)** | Next.js 16, React 19, TypeScript, Sanity 6, Anthropic SDK, Vercel
 
 Full-stack bakery storefront and content platform for the Kenyan market. Sanity-backed catalog with KES pricing tiers, client-side cart, and an AI order assistant built on the Anthropic Messages API with tool use for catalog lookup, pricing, and order handoff. Split datasets separate public content from private order and subscriber data. Microsoft Graph Mail for notifications, structured Bakery schema, sitemap, and analytics.
 
 The interesting constraint: card penetration is low and cart abandonment at a payment wall is high, so checkout hands off to WhatsApp where the customer already is. M-Pesa Daraja is on the roadmap. Designing for the payment rails people actually use is the difference between a working store and a portfolio piece.
 
-**[SeePU-Solutions](https://github.com/kabugig/SeePU-Solutions)** | Static site, Cloudflare Workers, LLM assistant
+**[SeePU-Solutions](https://seepu.co.ke/)** | Static site, Cloudflare Workers, LLM assistant
 
 One partner. Complete ICT and digital growth. Static marketing site engineered for speed on constrained connections, with an AI visitor assistant running as a Cloudflare Worker at the edge. Strategy, execution, and analytics as one operating model rather than three vendors.
 
