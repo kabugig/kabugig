@@ -80,6 +80,6 @@ My documentary photography has been published by the [United Nations](https://ne
 
 ### Reach me
 
-[LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) | [seepu.co.ke](https://seepu.co.ke) | gibson@seepu.co.ke | kabugig@gmail.com
+[LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) | [SEEPU.CO.KE](https://seepu.co.ke) | gibson@seepu.co.ke | kabugig@gmail.com
 
 Open to conversations about AI engineering, digital transformation, and enterprise systems roles, particularly where emerging market context is an asset rather than a footnote.
