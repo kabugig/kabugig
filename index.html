@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gibson Kabugi | AI Engineering &amp; Enterprise Systems, Nairobi Kenya</title>
+
+<link rel="canonical" href="https://kabugig.github.io/kabugig/">
+<meta name="description" content="Gibson Kabugi builds production AI systems and enterprise infrastructure from Nairobi. NetSuite ERP across 20 countries, Anthropic and Cloudflare Workers in production, Microsoft 365 and Azure. 10+ years across INGOs and UN agencies.">
+<meta name="keywords" content="Gibson Kabugi, AI engineer Kenya, NetSuite administrator Kenya, digital transformation Nairobi, Microsoft 365 consultant Kenya, ERP support Africa, Cloudflare Workers developer, enterprise systems Kenya, IT consultant Nairobi, SeePU Solutions, hire AI engineer Africa">
+<meta name="author" content="Gibson Kabugi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A1733">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gibson Kabugi">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://kabugig.github.io/kabugig/">
+<meta property="og:title" content="Gibson Kabugi | AI Engineering &amp; Enterprise Systems, Nairobi Kenya">
+<meta property="og:description" content="Production AI systems and enterprise infrastructure from Nairobi. NetSuite ERP across 20 countries. Anthropic and Cloudflare Workers in production.">
+<meta property="og:image" content="https://kabugig.github.io/kabugig/avatar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gibson Kabugi | AI Engineering &amp; Enterprise Systems, Nairobi Kenya">
+<meta name="twitter:description" content="Production AI systems and enterprise infrastructure from Nairobi. NetSuite ERP across 20 countries.">
+<meta name="twitter:image" content="https://kabugig.github.io/kabugig/avatar.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Gibson Kabugi",
+  "url": "https://kabugig.github.io/kabugig/",
+  "jobTitle": "Systems and Applications Support",
+  "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
+  "email": "gibson@seepu.co.ke",
+  "knowsAbout": ["Artificial Intelligence Engineering","NetSuite ERP","Microsoft 365","Azure","Cloudflare Workers","Digital Transformation","Cybersecurity","Technical SEO"],
+  "sameAs": [
+    "https://github.com/kabugig",
+    "https://www.linkedin.com/in/gibson-kabugi-9b043250/",
+    "https://seepu.co.ke",
+    "https://credly.com/users/gibson-kabugi"
+  ],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "UNICAF University" },
+    { "@type": "CollegeOrUniversity", "name": "Jomo Kenyatta University of Agriculture and Technology" }
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Systems and Applications Support Associate",
+    "occupationLocation": { "@type": "City", "name": "Nairobi" },
+    "skills": "NetSuite ERP administration, Microsoft 365, Azure, Entra ID, OKTA, Cloudflare Workers, Anthropic API, Python, technical SEO, cybersecurity"
+  },
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "Oracle NetSuite Certified AI Foundations Associate" },
+    { "@type": "EducationalOccupationalCredential", "name": "Oracle NetSuite Certified BI and Reporting Associate" },
+    { "@type": "EducationalOccupationalCredential", "name": "CCNA v7" },
+    { "@type": "EducationalOccupationalCredential", "name": "ITIL Foundation" },
+    { "@type": "EducationalOccupationalCredential", "name": "NIST Cybersecurity Framework" }
+  ],
+  "worksFor": [
+    { "@type": "Organization", "name": "International NGO" },
+    { "@type": "Organization", "name": "SeePU Solutions", "url": "https://seepu.co.ke" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* SeePU brand: navy, royal blue, orange */
+  --navy:#0A1733;
+  --blue:#1E42B8;
+  --orange:#F97316;
+
+  --navy-lift:#122246;
+  --ink:#FFFFFF;
+  --ink-soft:rgba(255,255,255,.76);
+  --ink-mute:rgba(255,255,255,.54);
+  --rule:rgba(255,255,255,.14);
+
+  --serif:Cambria,"Bitstream Charter","Charis SIL",Georgia,"Times New Roman",serif;
+  --mono:"Cascadia Mono",Consolas,"SF Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);
+  background:var(--navy);
+  font-family:var(--serif);font-size:17px;line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+a{color:inherit}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:1px solid var(--rule);position:sticky;top:0;background:rgba(10,23,51,.86);backdrop-filter:blur(10px);z-index:30}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:62px}
+.mark{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+.mark span{color:var(--orange)}
+.navlinks{display:flex;align-items:center;gap:24px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.navlinks a{color:var(--ink-mute);text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;transition:color .18s,border-color .18s}
+.navlinks a:hover,.navlinks a:focus-visible{color:var(--ink);border-color:var(--orange)}
+.navlinks .pill{border:none;background:var(--orange);color:#fff;padding:9px 16px;border-radius:999px;letter-spacing:.06em}
+.navlinks .pill:hover,.navlinks .pill:focus-visible{background:#EA630B;color:#fff;border-color:transparent}
+@media(max-width:760px){.navlinks a:not(.pill){display:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  padding:96px 0 74px;border-bottom:1px solid var(--rule);
+  background:
+    radial-gradient(1100px 520px at 78% 18%, rgba(249,115,22,.16), transparent 62%),
+    linear-gradient(128deg, var(--navy) 0%, #14286B 46%, var(--blue) 100%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:66px 66px;
+}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{
+  display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-soft);margin:0 0 28px;padding:9px 18px;border:1px solid var(--rule);border-radius:999px;
+  background:rgba(255,255,255,.05);
+}
+.eyebrow .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--orange);margin-right:10px;vertical-align:1px}
+h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(2.4rem,6.6vw,4.3rem);line-height:1.04;
+  letter-spacing:-.022em;margin:0 0 28px;max-width:16ch;
+}
+h1 em{font-style:italic;color:var(--orange)}
+.lede{font-size:clamp(1.06rem,2.1vw,1.26rem);color:var(--ink-soft);max-width:58ch;margin:0 0 18px}
+.lede-2{color:var(--ink-mute);max-width:56ch;margin:0 0 36px;font-size:1.02rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px}
+.btn{
+  font-family:var(--serif);font-size:1rem;text-decoration:none;
+  padding:13px 26px;border-radius:999px;border:1px solid var(--rule);transition:.18s;
+}
+.btn-solid{background:var(--orange);border-color:var(--orange);color:#fff;box-shadow:0 8px 26px rgba(249,115,22,.32)}
+.btn-solid:hover,.btn-solid:focus-visible{background:#EA630B;border-color:#EA630B}
+.btn-ghost{background:rgba(255,255,255,.04)}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3)}
+
+/* ---------- section frame ---------- */
+section{padding:70px 0;border-bottom:1px solid var(--rule)}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:40px}
+.sec-head h2{font-family:var(--serif);font-weight:700;font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.015em;margin:0}
+.sec-head .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);white-space:nowrap}
+.sec-head .line{flex:1;height:1px;background:var(--rule)}
+
+/* ---------- ledger ---------- */
+.ledger{border-top:1px solid var(--rule)}
+.row{
+  display:grid;grid-template-columns:112px 1fr;gap:28px;
+  padding:26px 0;border-bottom:1px solid var(--rule);transition:background .2s;
+}
+.row:hover{background:rgba(255,255,255,.035)}
+.metric{font-family:var(--serif);font-weight:700;font-size:2.25rem;line-height:1;letter-spacing:-.02em;color:var(--orange)}
+.metric small{display:block;font-family:var(--mono);font-size:10px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);margin-top:10px;line-height:1.45}
+.row h3{font-family:var(--serif);font-weight:700;font-size:1.14rem;margin:0 0 7px}
+.row p{margin:0;color:var(--ink-soft);font-size:1rem;max-width:66ch}
+@media(max-width:620px){.row{grid-template-columns:1fr;gap:12px}.metric{font-size:1.85rem}}
+
+/* ---------- work ---------- */
+.work{border-top:1px solid var(--rule)}
+.proj{padding:32px 0;border-bottom:1px solid var(--rule)}
+.proj-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:13px;margin-bottom:11px}
+.proj-top h3{font-family:var(--serif);font-weight:700;font-size:1.42rem;letter-spacing:-.01em;margin:0}
+.proj-top h3 a{text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:2px}
+.proj-top h3 a:hover,.proj-top h3 a:focus-visible{color:var(--orange)}
+.stack-line{font-family:var(--mono);font-size:11.5px;color:var(--ink-mute);letter-spacing:.03em}
+.proj p{margin:0 0 13px;color:var(--ink-soft);max-width:74ch;font-size:1rem}
+.note{border-left:2px solid var(--orange);padding-left:17px;color:var(--ink-mute);font-size:.96rem;max-width:70ch}
+.livegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));border-top:1px solid var(--rule)}
+.live{padding:27px 30px 27px 0;border-bottom:1px solid var(--rule)}
+.live h3{font-family:var(--mono);font-size:13px;letter-spacing:.04em;margin:0 0 8px;font-weight:400}
+.live h3 a{text-decoration:none;border-bottom:1px solid var(--orange)}
+.live h3 a:hover,.live h3 a:focus-visible{color:var(--orange)}
+.live span{display:block;font-family:var(--mono);font-size:10px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}
+.live p{margin:0;font-size:.97rem;color:var(--ink-soft)}
+
+/* ---------- journey ---------- */
+.journey{position:relative;border-top:1px solid var(--rule);padding-top:6px}
+.stop{
+  position:relative;display:grid;grid-template-columns:158px 1fr;gap:30px;
+  padding:26px 0 26px 0;border-bottom:1px solid var(--rule);transition:background .2s;
+}
+.stop:hover{background:rgba(255,255,255,.035)}
+.when{position:relative;padding-left:26px}
+.when::before{
+  content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;
+  background:var(--navy);border:2px solid var(--orange);
+}
+.stop::after{
+  content:"";position:absolute;left:4px;top:35px;bottom:-1px;width:1px;background:var(--rule);
+}
+.stop:last-child::after{display:none}
+.stop.now .when::before{background:var(--orange);box-shadow:0 0 0 5px rgba(249,115,22,.22)}
+.when b{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.11em;color:var(--orange);font-weight:400}
+.when span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-mute);margin-top:7px}
+.stop h3{font-family:var(--serif);font-weight:700;font-size:1.16rem;margin:0 0 3px}
+.stop .org{font-family:var(--serif);font-style:italic;color:var(--ink-mute);font-size:.98rem;margin:0 0 9px}
+.stop p.did{margin:0 0 13px;color:var(--ink-soft);font-size:1rem;max-width:68ch}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips i{
+  font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;
+  padding:5px 11px;border:1px solid var(--rule);border-radius:999px;color:var(--ink-mute);
+}
+@media(max-width:660px){
+  .stop{grid-template-columns:1fr;gap:12px;padding-left:0}
+  .stop::after{display:none}
+}
+
+/* ---------- manifest ---------- */
+.manifest{font-family:var(--mono);font-size:13.5px;border-top:1px solid var(--rule)}
+.mline{display:grid;grid-template-columns:132px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.mline dt{color:var(--orange);letter-spacing:.11em;text-transform:uppercase;font-size:11px;padding-top:3px}
+.mline dd{margin:0;color:var(--ink-soft);line-height:1.8}
+@media(max-width:620px){.mline{grid-template-columns:1fr;gap:6px}}
+
+.certs{font-size:1rem;color:var(--ink-soft);max-width:88ch;line-height:2.05}
+.certs b{font-weight:700;color:var(--ink)}
+.certs a{color:var(--orange)}
+.beyond p{max-width:70ch;color:var(--ink-soft);margin:0}
+.beyond a{color:var(--orange);text-underline-offset:3px}
+
+/* ---------- contact ---------- */
+.contact{
+  border-bottom:none;
+  background:
+    radial-gradient(820px 420px at 20% 0%, rgba(249,115,22,.15), transparent 64%),
+    linear-gradient(112deg, var(--blue) 0%, #14286B 58%, var(--navy) 100%);
+}
+.contact p{color:var(--ink-soft);max-width:62ch}
+.chan{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}
+.chan a{
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-decoration:none;
+  padding:12px 19px;border:1px solid rgba(255,255,255,.28);border-radius:999px;transition:.18s;
+}
+.chan a:hover,.chan a:focus-visible{background:var(--orange);border-color:var(--orange);color:#fff}
+footer{background:var(--navy);color:var(--ink-mute);font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;padding:26px 0 34px}
+
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">GIBSON KABUGI <span>/</span> NBO</a>
+    <nav class="navlinks">
+      <a href="#build">Build</a>
+      <a href="#work">Work</a>
+      <a href="#journey">Journey</a>
+      <a href="#stack">Stack</a>
+      <a class="pill" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow"><span class="dot"></span>From Nairobi, Kenya &nbsp;·&nbsp; To The World</p>
+    <h1>I Ship Production Systems from <em>Nairobi</em>.</h1>
+    <p class="lede">Enterprise ERP across 20 countries by day. AI-enabled products and growth infrastructure the rest of the time.</p>
+    <p class="lede-2">Most AI engineering happens on fast connections with cheap compute and mature payment rails. Mine does not. That constraint makes the work better.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#work">See the work &rarr;</a>
+      <a class="btn btn-ghost" href="mailto:gibson@seepu.co.ke">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<section id="build">
+  <div class="wrap">
+    <div class="sec-head"><h2>What I build</h2><span class="line"></span><span class="tag">Four tracks</span></div>
+    <div class="ledger">
+
+      <div class="row">
+        <div class="metric">20<small>Countries</small></div>
+        <div>
+          <h3>Enterprise systems at multi-country scale</h3>
+          <p>NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 1 and Tier 2 support for 2,000+ users across 12 African countries at EGPAF.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="metric">Live<small>Not notebooks</small></div>
+        <div>
+          <h3>AI in production</h3>
+          <p>Anthropic Messages API powering a live order assistant with catalog, category, pricing, and checkout tools. Cloudflare Workers running an LLM visitor assistant at the edge. Content and support pipelines on GPT-4 that cut draft time by 70 percent.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="metric">4<small>Country offices</small></div>
+        <div>
+          <h3>Cloud and identity infrastructure</h3>
+          <p>Microsoft 365, Azure, Intune, Entra ID, OKTA, and Active Directory. SharePoint and Power Automate workflow automation designed, deployed, and supported across four country offices.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="metric">40%<small>CPL reduction</small></div>
+        <div>
+          <h3>Growth engineering</h3>
+          <p>Technical SEO including Core Web Vitals, crawlability, and site migrations. GEO and AEO for AI-era discoverability. Meta Ads at 5K to 7K USD monthly, cost per lead down 40 percent, conversions up 50 percent.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head"><h2>Selected work</h2><span class="line"></span><span class="tag">Source available</span></div>
+    <div class="work">
+
+      <div class="proj">
+        <div class="proj-top">
+          <h3><a href="https://www.muthonibakehouse.co.ke/" target="_blank" rel="noopener">Muthoni's Bake House (MBH)</a></h3>
+          <span class="stack-line">Next.js 16 &middot; React 19 &middot; TypeScript &middot; Sanity 6 &middot; Anthropic SDK &middot; Vercel</span>
+        </div>
+        <p>Full-stack bakery storefront and content platform for the Kenyan market. Sanity-backed catalog with KES pricing tiers, client-side cart, and an AI order assistant built on the Anthropic Messages API with tool use for catalog lookup, pricing, and order handoff. Split datasets separate public content from private order and subscriber data. Microsoft Graph Mail for notifications, structured Bakery schema, sitemap, and analytics.</p>
+        <p class="note">The interesting constraint: card penetration is low and cart abandonment at a payment wall is high, so checkout hands off to WhatsApp where the customer already is. M-Pesa Daraja is on the roadmap. Designing for the payment rails people actually use is the difference between a working store and a portfolio piece.</p>
+      </div>
+
+      <div class="proj">
+        <div class="proj-top">
+          <h3><a href="https://seepu.co.ke/" target="_blank" rel="noopener">SeePU Solutions</a></h3>
+          <span class="stack-line">Static site &middot; Cloudflare Workers &middot; LLM assistant</span>
+        </div>
+        <p>One partner. Complete ICT and digital growth. Static marketing site engineered for speed on constrained connections, with an AI visitor assistant running as a Cloudflare Worker at the edge. Strategy, execution, and analytics as one operating model rather than three vendors.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Live sites I built and maintain</h2><span class="line"></span><span class="tag">WordPress</span></div>
+    <div class="livegrid">
+      <div class="live">
+        <h3><a href="https://globalthrive.africa/" target="_blank" rel="noopener">GLOBALTHRIVE.AFRICA</a></h3>
+        <span>Global Thrive Africa</span>
+        <p>Youth mentorship and parenting education initiative in Kenya. I built the platform and I mentor on it, which means every design decision was tested against people actually using it on mobile data.</p>
+      </div>
+      <div class="live">
+        <h3><a href="https://africii.org/" target="_blank" rel="noopener">AFRICII.ORG</a></h3>
+        <span>AFRICII</span>
+        <p>Mission-driven NGO platform with clear program pages, resource sections, and a flexible CMS backend, so the team publishes projects and updates without a developer on call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-head"><h2>The route here</h2><span class="line"></span><span class="tag">2011 &rarr; now</span></div>
+    <div class="journey">
+
+      <div class="stop now">
+        <div class="when"><b>2026 &rarr; now</b><span>Global &middot; Remote</span></div>
+        <div>
+          <h3>Systems and Applications Support</h3>
+          <p class="org">International NGO, HQ New York, based in Nairobi</p>
+          <p class="did">Own the day-to-day of a four-system finance stack across 20 countries in Africa, Asia, Europe, and the US. Access reviews and segregation of duties that hold up to donor audit, month-end and year-end close support, UAT on every upgrade, and the SOPs and training that keep 20 country offices working the same way.</p>
+          <div class="chips"><i>NetSuite ERP</i><i>Solver (BI360)</i><i>Journyx</i><i>KProcure</i><i>Access reviews</i><i>Month-end close</i><i>Donor compliance</i><i>FreshService (ESMS/ITSM)</i><i>Business Intelligence Reports via PowerBI</i></div>
+        </div>
+      </div>
+
+      <div class="stop">
+        <div class="when"><b>2025 &rarr; 2026</b><span>UN &middot; Remote to Cairo-Egypt</span></div>
+        <div>
+          <h3>Technical and Administrative Support</h3>
+          <p class="org">World Health Organization (WHO), Eastern Mediterranean Regional Office</p>
+          <p class="did">UN2720 and COGAT approval workflows on compliance-critical humanitarian access processes. Centralized filing, approval-timeline tracking, and weekly reporting built to stay audit-ready. Twelve weeks at 20 hours, recognized with a UNV Certificate of Appreciation.</p>
+          <div class="chips"><i>UN2720</i><i>COGAT</i><i>Compliance workflow</i><i>Audit readiness</i></div>
+        </div>
+      </div>
+
+      <div class="stop">
+        <div class="when"><b>2025</b><span>Kenya &middot; Co-founder</span></div>
+        <div>
+          <h3>Co-founder & Technology Lead</h3>
+          <p class="org">Global Thrive Africa (GTA)</p>
+          <p class="did">Youth Mentorship & Parenting Education, co-founded & still running. I built the whole technology side: the platform, the CMS the team manages themselves, the social presence, and the analytics. Then I mentor on it. Building for young people on mobile data and mentoring the same people is the tightest feedback loop I have, and it is where most of my instincts about designing for constraint were formed.</p>
+          <div class="chips"><i>Co-founder</i><i>Platform build</i><i>WordPress CMS</i><i>Social and content</i><i>Youth mentorship</i></div>
+        </div>
+      </div>
+
+      <div class="stop">
+        <div class="when"><b>2024 &rarr; 2025</b><span>12 countries</span></div>
+        <div>
+          <h3>Regional IT Support Analyst</h3>
+          <p class="org">Elizabeth Glaser Pediatric AIDS Foundation</p>
+          <p class="did">Tier 2 & 3 across Kenya, Nigeria, Lesotho, Zimbabwe, Mozambique, Uganda, Cameroon, Côte d'Ivoire, DRC, and Eswatini for 2,000+ users. Identity in Active Directory, Microsoft 365, and OKTA. SharePoint automation shipped in four countries. Encryption, backup, and security audits enforced against real bandwidth constraints.</p>
+          <div class="chips"><i>Active Directory</i><i>OKTA</i><i>Microsoft 365</i><i>SharePoint Automation</i><i>Unit4 ERP</i><i>ZohoDesk</i></div>
+        </div>
+      </div>
+
+      <div class="stop">
+        <div class="when"><b>2020 &rarr; 2024</b><span>Kenya &middot; Nigeria &middot; Lesotho</span></div>
+        <div>
+          <h3>Senior IT Officer</h3>
+          <p class="org">Elizabeth Glaser Pediatric AIDS Foundation</p>
+          <p class="did">Where the work turned from fixing to leading. Ran annual IT budgeting and procurement, recruited and appraised IT staff, and drove SharePoint automation for 500+ users across four countries. Also the years the documentary photography started getting published.</p>
+          <div class="chips"><i>Team leadership</i><i>IT budgeting</i><i>Procurement</i><i>Multi-country ops</i></div>
+        </div>
+      </div>
+
+      <div class="stop">
+        <div class="when"><b>2016 &rarr; now</b><span>Nairobi &middot; Founder</span></div>
+        <div>
+          <h3>Founder & Principal Consultant</h3>
+          <p class="org">SeePU Solutions</p>
+          <p class="did">The track that runs alongside everything else. Microsoft 365 tenant-to-tenant migrations, technical SEO and GEO, Meta Ads at 5K to 7K USD monthly, and the AI builds: Anthropic tool-use agents, Cloudflare Workers at the edge, GPT-4 content pipelines. Clients include Corbetti Geothermal, Muthoni's Bake House, Global Thrive Africa, and AFRICII.</p>
+          <div class="chips"><i>Anthropic API</i><i>Cloudflare Workers</i><i>Next.js</i><i>M365 migration</i><i>Technical SEO</i><i>Meta Ads</i></div>
+        </div>
+      </div>
+      
+      <div class="stop">
+        <div class="when"><b>2011 &rarr; 2016</b><span>Where it started</span></div>
+        <div>
+          <h3>IT Officer, then IT Support Officer</h3>
+          <p class="org">EGPAF, INSO Kenya, Merlin UK and Oxfam GB</p>
+          <p class="did">Windows Server administration, early Azure storage work, and IT infrastructure builds. Before that, data management on emergency responses, which is where the habit of designing for constraint rather than around it came from.</p>
+          <div class="chips"><i>Windows Server</i><i>Azure storage</i><i>Infrastructure</i><i>Humanitarian response</i></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="sec-head"><h2>Stack</h2><span class="line"></span><span class="tag">Working tools</span></div>
+    <dl class="manifest">
+      <div class="mline"><dt>AI</dt><dd>Anthropic Claude, tool use, agentic pipelines, Claude Code, GPT-4</dd></div>
+      <div class="mline"><dt>Web</dt><dd>Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, WordPress</dd></div>
+      <div class="mline"><dt>Enterprise</dt><dd>NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Azure, Intune</dd></div>
+      <div class="mline"><dt>Identity</dt><dd>Entra ID, OKTA, Active Directory</dd></div>
+      <div class="mline"><dt>Automation</dt><dd>Python, REST APIs, Power Automate, SharePoint</dd></div>
+      <div class="mline"><dt>Data</dt><dd>Power BI, SuiteAnalytics, GA4, Search Console, Looker</dd></div>
+      <div class="mline"><dt>Security</dt><dd>NIST CSF, CII/CIP, SOPHOS, access reviews, CISM in progress</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Certifications</h2><span class="line"></span><span class="tag">Verified</span></div>
+    <p class="certs">
+      <b>Oracle NetSuite AI Foundations Associate</b> &middot; <b>Oracle NetSuite BI and Reporting Associate</b> &middot; PMI-CPMAI Introduction &middot; Anthropic AI Fluency and Claude 101 &middot; <b>CCNA v7</b> &middot; ITIL Foundation &middot; NIST Cybersecurity Framework &middot; Critical Infrastructure Protection (CII/CIP) &middot; Microsoft Azure and M365 Administration &middot; Google Workspace Admin &middot; PMD Pro &middot; ITU Academy Digital Public Infrastructure &middot; <b>CISM in progress</b>
+      <br><a href="https://credly.com/users/gibson-kabugi" target="_blank" rel="noopener">Full verified list on Credly &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<section class="beyond">
+  <div class="wrap">
+    <div class="sec-head"><h2>Beyond the code</h2><span class="line"></span><span class="tag">Documentary</span></div>
+    <p>My documentary photography has been published by the <a href="https://news.un.org/sw/story/2024/02/1171737" target="_blank" rel="noopener">United Nations</a>, <a href="https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&amp;isAllowed=y" target="_blank" rel="noopener">WHO</a>, and <a href="https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf" target="_blank" rel="noopener">EGPAF</a>. Same instinct as the engineering work: understand the people before you build the system.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head"><h2>Reach me</h2><span class="line"></span><span class="tag">Nairobi &middot; UTC+3</span></div>
+    <p>Open to conversations about AI engineering, digital transformation, and enterprise systems roles, particularly where emerging market context is an asset rather than a footnote.</p>
+    <div class="chan">
+      <a href="mailto:gibson@seepu.co.ke">gibson@seepu.co.ke</a>
+      <a href="https://www.linkedin.com/in/gibson-kabugi-9b043250/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/kabugig" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://seepu.co.ke" target="_blank" rel="noopener">seepu.co.ke</a>
+      <a href="tel:+254726659469">+254 726 659 469</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">© Gibson Kabugi | 2011 - 2026 &middot; Built & Maintained in Nairobi</div></footer>
+
+</body>
+</html>
