@@ -42,11 +42,11 @@ One partner. Complete ICT and digital growth. Static marketing site engineered f
 
 Not open source, but running in production. WordPress builds with technical SEO, performance tuning for low-bandwidth users, and ongoing maintenance.
 
-**[globalthrive.africa](https://globalthrive.africa/)** | Global Thrive Africa
+Global Thrive Africa |**[GTA](https://globalthrive.africa/)** 
 Youth mentorship and parenting education initiative in Kenya. I built the platform and I mentor on it, which means every design decision was tested against people actually using it on mobile data.
 
-**[africii.org](https://africii.org/)** | AFRICII
-Organizational(NGO) web presence, content architecture, and search visibility.
+AFRICII | **[africii.org](https://africii.org/)**
+Organizational (NGO) web presence, content architecture, and search visibility.
 
 ---
 
