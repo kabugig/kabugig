@@ -1,8 +1,8 @@
 # Gibson Kabugi
 
-**I ship production systems from Nairobi. Enterprise ERP across 20 countries by day, AI-enabled products and growth infrastructure the rest of the time.**
+**I ship Production Systems from Nairobi. Enterprise ERP across 20 countries by day, AI-enabled Products & Growth infrastructure The Rest of The Time.**
 
-Systems and Applications Support Associate at Helen Keller Intl, employed by Global HQ in New York, operating from Kenya. Founder of [SeePU Solutions](https://seepu.co.ke), an ICT, cloud, SEO, and automation practice. Ten years of enterprise IT across INGOs and UN agencies, now building at the point where AI stops being a demo and starts being infrastructure.
+Founder of [SeePU Solutions](https://seepu.co.ke), an ICT, cloud, SEO, and automation practice. Ten years of enterprise IT across INGOs and UN agencies, now building at the point where AI stops being a demo and starts being infrastructure.
 
 Most AI engineering happens on fast connections with cheap compute and mature payment rails. Mine does not. That constraint makes the work better.
 
@@ -14,10 +14,10 @@ Most AI engineering happens on fast connections with cheap compute and mature pa
 Anthropic Messages API powering a live order assistant with catalog, category, pricing, and checkout tools. Cloudflare Workers running an LLM visitor assistant at the edge. Content and support pipelines on GPT-4 that cut draft time by 70 percent.
 
 **Enterprise systems at multi-country scale**
-NetSuite ERP, Solver, Journyx, and KProcure administered across a 20-country decentralized environment. Access reviews, segregation of duties, month-end close support, donor compliance. Before that, Tier 1 and Tier 2 support for 2,000+ users across 12 African countries at EGPAF.
+NetSuite ERP, Solver, Journyx, and KProcure administered across a 20-country decentralized environment. Access reviews, segregation of duties, month-end close support, donor compliance. Before that, Tier 1 and Tier 2 support on Unit4 ERP, Global IT Support for 2,000+ users across 12 African countries at Elizabeth Glaser Pediatric AIDS Foundation (EGPAF).
 
 **Cloud and identity infrastructure**
-Microsoft 365, Azure, Intune, Entra ID, OKTA, Active Directory. SharePoint and Power Automate workflow automation deployed across four country offices.
+GCP Administration, Looker, Microsoft 365, Azure, Intune, Entra ID, OKTA, Active Directory. SharePoint, Power BI and Power Automate workflow automation deployed across four country offices.
 
 **Growth engineering**
 Technical SEO including Core Web Vitals, crawlability, and site migrations. GEO and AEO for AI-era discoverability. Meta Ads at 5K to 7K USD monthly, CPL down 40 percent, conversions up 50 percent.
@@ -38,6 +38,18 @@ One partner. Complete ICT and digital growth. Static marketing site engineered f
 
 ---
 
+### Live sites I built & maintain
+
+Not open source, but running in production. WordPress builds with technical SEO, performance tuning for low-bandwidth users, and ongoing maintenance.
+
+**[globalthrive.africa](https://globalthrive.africa/)** | Global Thrive Africa
+Youth mentorship and parenting education initiative in Kenya. I built the platform and I mentor on it, which means every design decision was tested against people actually using it on mobile data.
+
+**[africii.org](https://africii.org/)** | AFRICII
+Organizational(NGO) web presence, content architecture, and search visibility.
+
+---
+
 ### Stack
 
 ```
@@ -54,7 +66,7 @@ Security      NIST CSF, CIP, SOPHOS, access reviews, CISM in progress
 
 ### Certifications
 
-Oracle NetSuite AI Foundations Associate | Oracle NetSuite BI and Reporting Associate | PMI-CPMAI Introduction | Anthropic AI Fluency and Claude 101 | CCNA v7 | ITIL Foundation | NIST CSF | Critical Infrastructure Protection | Microsoft Azure and M365 Administration | Google Workspace Admin | PMD Pro | ITU Academy Digital Public Infrastructure | CISM in progress
+Oracle NetSuite AI Foundations Associate | Oracle NetSuite BI and Reporting Associate | PMI-CPMAI Introduction | Anthropic AI Fluency and Claude 101 | CCNA v7 | ITIL Foundation | NIST CSF | Critical Infrastructure Protection (CIP) | Microsoft Azure and M365 Administration | Google Workspace Admin | PMD Pro | ITU Academy Digital Public Infrastructure (DPI) | CISM in progress
 
 [Full verified list on Credly](https://credly.com/users/gibson-kabugi)
 
@@ -62,7 +74,7 @@ Oracle NetSuite AI Foundations Associate | Oracle NetSuite BI and Reporting Asso
 
 ### Beyond the code
 
-I lead **Global Thrive Africa**, a youth mentorship and parenting education initiative in Kenya. My documentary photography has been published by the United Nations, WHO, and EGPAF. Both feed the same instinct: understand the people before you build the system.
+My documentary photography has been published by the United Nations(https://news.un.org/sw/story/2024/02/1171737), WHO (https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&isAllowed=y) & EGPAF (https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf). Same instinct as the engineering work: understand the people before you build the system.
 
 ---
 
