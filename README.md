@@ -50,45 +50,6 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 
 ---
 
-## The route here
-
-**2026 → now · Systems and Applications Support**
-*International NGO, HQ New York, based in Nairobi*
-Own the day-to-day of a four-system finance stack across 20 countries in Africa, Asia, Europe, and the US. Access reviews and segregation of duties that hold up to donor audit, month-end and year-end close support, UAT on every upgrade, and the SOPs and training that keep 20 country offices working the same way.
-`NetSuite ERP` `Solver (BI360)` `Journyx` `KProcure` `Access reviews` `Month-end close` `Donor compliance` `FreshService` `Power BI`
-
-**2025 → 2026 · Technical and Administrative Support**
-*World Health Organization, Eastern Mediterranean Regional Office*
-UN2720 and COGAT approval workflows on compliance-critical humanitarian access processes. Centralized filing, approval-timeline tracking, and weekly reporting built to stay audit-ready. Twelve weeks at 20 hours, recognized with a UNV Certificate of Appreciation.
-`UN2720` `COGAT` `Compliance workflow` `Audit readiness`
-
-**2025 → now · Co-founder and Technology Lead**
-*Global Thrive Africa*
-Youth mentorship and parenting education, co-founded and still running. I built the whole technology side: the platform, the CMS the team manages themselves, the social presence, and the analytics. Then I mentor on it. Building for young people on mobile data and mentoring the same people is the tightest feedback loop I have, and it is where most of my instincts about designing for constraint were formed.
-`Co-founder` `Platform build` `WordPress CMS` `Social and content` `Youth mentorship`
-
-**2024 → 2025 · Regional IT Support Analyst**
-*Elizabeth Glaser Pediatric AIDS Foundation*
-Tier 2 and Tier 3 across Kenya, Nigeria, Lesotho, Zimbabwe, Mozambique, Uganda, Cameroon, Côte d'Ivoire, DRC, and Eswatini for 2,000+ users. Identity in Active Directory, Microsoft 365, and OKTA. SharePoint automation shipped in four countries. Encryption, backup, and security audits enforced against real bandwidth constraints.
-`Active Directory` `OKTA` `Microsoft 365` `SharePoint automation` `Unit4 ERP` `ZohoDesk`
-
-**2020 → 2024 · Senior IT Officer**
-*Elizabeth Glaser Pediatric AIDS Foundation*
-Where the work turned from fixing to leading. Ran annual IT budgeting and procurement, recruited and appraised IT staff, and drove SharePoint automation for 500+ users across four countries. Also the years the documentary photography started getting published.
-`Team leadership` `IT budgeting` `Procurement` `Multi-country ops`
-
-**2016 → now · Founder and Principal Consultant**
-*SeePU Solutions*
-The track that runs alongside everything else. Microsoft 365 tenant-to-tenant migrations, technical SEO and GEO, Meta Ads at 5K to 7K USD monthly, and the AI builds: Anthropic tool-use agents, Cloudflare Workers at the edge, GPT-4 content pipelines. Clients include Corbetti Geothermal, Muthoni's Bake House, Global Thrive Africa, and AFRICII.
-`Anthropic API` `Cloudflare Workers` `Next.js` `M365 migration` `Technical SEO` `Meta Ads`
-
-**2011 → 2016 · IT Officer, then IT Support Officer**
-*EGPAF, INSO Kenya, Merlin UK and Oxfam GB*
-Windows Server administration, early Azure storage work, and IT infrastructure builds. Before that, data management on emergency responses, which is where the habit of designing for constraint rather than around it came from.
-`Windows Server` `Azure storage` `Infrastructure` `Humanitarian response`
-
----
-
 ## Stack
 
 | | |
