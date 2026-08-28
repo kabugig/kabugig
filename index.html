@@ -106,6 +106,7 @@ document.documentElement.setAttribute('data-theme',t)})();
   --hero-a:#0A1733; --hero-b:#14286B; --hero-c:#1E42B8;
   --contact-tint:rgba(249,115,22,.15);
   --contact-a:#1E42B8; --contact-b:#14286B; --contact-c:#0A1733;
+  --elev:none;
 }
 
 /* light: same palette, inverted. Orange deepens so small type
@@ -117,21 +118,22 @@ document.documentElement.setAttribute('data-theme',t)})();
   --ink-mute:rgba(10,23,51,.64);
   --rule:rgba(10,23,51,.14);
   --rule-strong:rgba(10,23,51,.26);
-  --surface:rgba(30,66,184,.05);
-  --surface-hi:rgba(30,66,184,.12);
-  --hover:rgba(30,66,184,.045);
-  --grid:rgba(10,23,51,.05);
+  --surface:rgba(30,66,184,.08);
+  --surface-hi:rgba(30,66,184,.16);
+  --hover:rgba(30,66,184,.07);
+  --grid:rgba(10,23,51,.032);
   --mast-bg:rgba(244,246,251,.88);
 
-  --orange:#D24F05;
+  --orange:#C74905;
   --orange-hi:#B03D06;
   --accent-ink:#B8410A;
-  --btn-shadow:rgba(210,79,5,.26);
+  --btn-shadow:rgba(199,73,5,.26);
 
-  --hero-tint:rgba(249,115,22,.14);
+  --hero-tint:rgba(249,115,22,.07);
   --hero-a:#FFFFFF; --hero-b:#E7EDFB; --hero-c:#D3DEF8;
   --contact-tint:rgba(249,115,22,.13);
   --contact-a:#D3DEF8; --contact-b:#E7EDFB; --contact-c:#F4F6FB;
+  --elev:0 1px 3px rgba(10,23,51,.08);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -189,7 +191,7 @@ a{color:inherit}
 .eyebrow{
   display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--ink-soft);margin:0 0 28px;padding:9px 18px;border:1px solid var(--rule);border-radius:999px;
-  background:var(--surface);
+  background:var(--surface);box-shadow:var(--elev);
 }
 .eyebrow .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--orange);margin-right:10px;vertical-align:1px}
 h1{
@@ -207,7 +209,7 @@ h1 em{font-style:italic;color:var(--orange)}
 }
 .btn-solid{background:var(--orange);border-color:var(--orange);color:#fff;box-shadow:0 8px 26px var(--btn-shadow)}
 .btn-solid:hover,.btn-solid:focus-visible{background:var(--orange-hi);border-color:var(--orange-hi)}
-.btn-ghost{background:var(--surface)}
+.btn-ghost{background:var(--surface);box-shadow:var(--elev)}
 .btn-ghost:hover,.btn-ghost:focus-visible{background:var(--surface-hi);border-color:var(--rule-strong)}
 
 /* ---------- section frame ---------- */
