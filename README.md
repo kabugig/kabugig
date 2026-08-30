@@ -29,19 +29,19 @@ Technical SEO including Core Web Vitals, crawlability, and site migrations. GEO 
 ## Selected work
 
 ### [Muthoni's Bake House](https://www.muthonibakehouse.co.ke/)
-`Next.js 16` `React 19` `TypeScript` `Sanity 6` `Anthropic SDK` `Vercel`
+![Next.js 16](https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React 19](https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=000000) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Sanity 6](https://img.shields.io/badge/Sanity%206-F03E2F?style=flat-square&logo=sanity&logoColor=white) ![Anthropic SDK](https://img.shields.io/badge/Anthropic%20SDK-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 Full-stack bakery storefront and content platform for the Kenyan market. Sanity-backed catalog with KES pricing tiers, client-side cart, and an AI order assistant built on the Anthropic Messages API with tool use for catalog lookup, pricing, and order handoff. Split datasets separate public content from private order and subscriber data. Microsoft Graph Mail for notifications, structured Bakery schema, sitemap, and analytics.
 
 > The interesting constraint: card penetration is low and cart abandonment at a payment wall is high, so checkout hands off to WhatsApp where the customer already is. M-Pesa Daraja is on the roadmap. Designing for the payment rails people actually use is the difference between a working store and a portfolio piece.
 
 ### [Joan Muthoni — Portfolio](https://joanmuthoni.co.ke/)
-`Next.js 16` `React 19` `Tailwind CSS 4` `Resend`
+![Next.js 16](https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React 19](https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=000000) ![Tailwind CSS 4](https://img.shields.io/badge/Tailwind%20CSS%204-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Resend](https://img.shields.io/badge/Resend-000000?style=flat-square&logo=resend&logoColor=white)
 
 Personal portfolio for Joan Muthoni Karanja, executive support and customer operations for international teams, from Nairobi. Scannable digital business card, QR scan analytics dashboard, and Resend-powered resume requests.
 
 ### [SeePU Solutions](https://seepu.co.ke/)
-`Static site` `Cloudflare Workers` `LLM assistant`
+![Static Site](https://img.shields.io/badge/Static%20Site-4B5563?style=flat-square) ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![LLM Assistant](https://img.shields.io/badge/LLM%20Assistant-D97757?style=flat-square&logo=anthropic&logoColor=white)
 
 One partner. Complete ICT and digital growth. Static marketing site engineered for speed on constrained connections, with an AI visitor assistant running as a Cloudflare Worker at the edge. Strategy, execution, and analytics as one operating model rather than three vendors.
 
