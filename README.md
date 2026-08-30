@@ -35,6 +35,11 @@ Full-stack bakery storefront and content platform for the Kenyan market. Sanity-
 
 > The interesting constraint: card penetration is low and cart abandonment at a payment wall is high, so checkout hands off to WhatsApp where the customer already is. M-Pesa Daraja is on the roadmap. Designing for the payment rails people actually use is the difference between a working store and a portfolio piece.
 
+### [Joan Muthoni — Portfolio](https://joanmuthoni.co.ke/)
+`Next.js 16` `React 19` `Tailwind CSS 4` `Resend`
+
+Personal portfolio for Joan Muthoni Karanja, executive support and customer operations for international teams, from Nairobi. Scannable digital business card, QR scan analytics dashboard, and Resend-powered resume requests.
+
 ### [SeePU Solutions](https://seepu.co.ke/)
 `Static site` `Cloudflare Workers` `LLM assistant`
 
