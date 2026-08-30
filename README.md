@@ -60,7 +60,7 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 | | |
 |---|---|
 | **AI** | Anthropic Claude, tool use, agentic pipelines, Claude Code, GPT-4 |
-| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, WordPress |
+| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, WordPress, Resend |
 | **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Azure, Intune |
 | **Identity** | Entra ID, OKTA, Active Directory |
 | **Automation** | Python, REST APIs, Power Automate, SharePoint |
