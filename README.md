@@ -63,7 +63,7 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 |---|---|
 | **AI** | Anthropic Claude, tool use, agentic pipelines, Claude Code, GPT-4 |
 | **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, WordPress, Resend |
-| **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Azure, Intune |
+| **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Azure, Intune, Freshservice |
 | **Identity** | Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory |
 | **Automation** | Python, PowerShell, ARM templates, REST APIs, Power Automate, SharePoint |
 | **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker |
@@ -78,6 +78,8 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 [Full verified list on Credly →](https://credly.com/users/gibson-kabugi)
 
 **Governance** · Completed on Microsoft Learn: **Microsoft Azure Administrator**, **Microsoft Security, Compliance, and Identity Fundamentals**, and **Microsoft Azure Fundamentals**. 60 modules and 15 learning paths across Azure RBAC and Policy, Entra ID identity governance, Microsoft Purview data governance and compliance, and Defender XDR. [Achievements on Microsoft Learn →](https://learn.microsoft.com/en-us/users/gibsonkabugi-8084/achievements)
+
+**ITSM** · Completed at Freshworks University: **Freshservice Advanced** course and certification path, October 2026. The ITSM platform already in daily use in my current role.
 
 ---
 
