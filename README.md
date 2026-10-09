@@ -19,7 +19,7 @@ Anthropic Messages API powering a live order assistant with catalog, category, p
 NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 & 3 support for 2,000+ users across 12 African countries at EGPAF.
 
 **4 country offices · Cloud and identity infrastructure**
-Microsoft 365, Azure, Intune, Entra ID, OKTA, and Active Directory. SharePoint and Power Automate workflow automation designed, deployed, and supported across four country offices.
+Microsoft 365, Azure, Intune, Entra ID, OKTA, and Active Directory. SharePoint and Power Automate workflow automation designed, deployed, and supported across four country offices. Backed by completed Microsoft Learn coursework in Azure Administrator and Security, Compliance, and Identity Fundamentals: RBAC, Azure Policy, Entra ID governance, Purview, and Defender XDR.
 
 **40% CPL reduction · Growth engineering**
 Technical SEO including Core Web Vitals, crawlability, and site migrations. GEO and AEO for AI-era discoverability. Meta Ads at 5K to 7K USD monthly, cost per lead down 40 percent, conversions up 50 percent.
@@ -64,10 +64,10 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 | **AI** | Anthropic Claude, tool use, agentic pipelines, Claude Code, GPT-4 |
 | **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, WordPress, Resend |
 | **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Azure, Intune |
-| **Identity** | Entra ID, OKTA, Active Directory |
-| **Automation** | Python, REST APIs, Power Automate, SharePoint |
+| **Identity** | Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory |
+| **Automation** | Python, PowerShell, ARM templates, REST APIs, Power Automate, SharePoint |
 | **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker |
-| **Security** | NIST CSF, CII/CIP, SOPHOS, access reviews, CISM in progress |
+| **Security** | Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, CISM in progress |
 
 ---
 
@@ -76,6 +76,8 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 **Oracle NetSuite AI Foundations Associate** · **Oracle NetSuite BI and Reporting Associate** · PMI-CPMAI Introduction · Anthropic AI Fluency and Claude 101 · **CCNA v7** · ITIL Foundation · NIST Cybersecurity Framework · Critical Infrastructure Protection (CII/CIP) · Microsoft Azure and M365 Administration · Google Workspace Admin · PMD Pro · ITU Academy Digital Public Infrastructure · **CISM in progress**
 
 [Full verified list on Credly →](https://credly.com/users/gibson-kabugi)
+
+**Governance** · Completed on Microsoft Learn: **Microsoft Azure Administrator**, **Microsoft Security, Compliance, and Identity Fundamentals**, and **Microsoft Azure Fundamentals**. 60 modules and 15 learning paths across Azure RBAC and Policy, Entra ID identity governance, Microsoft Purview data governance and compliance, and Defender XDR. [Achievements on Microsoft Learn →](https://learn.microsoft.com/en-us/users/gibsonkabugi-8084/achievements)
 
 ---
 
