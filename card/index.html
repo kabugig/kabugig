@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-UMiI/J1d+fvuJukUxnlTxdkhXzylULRySrJZ9EUW4Yg=' 'sha256-hCVgjtiM9SK3O4ktlWwhNflv7FLUVnRlIJxcIiDLe5k='; style-src 'self' 'sha256-kOTiRBA0NnrOSCoTrxKT+aU99JMNjfdLTlOYhRzR7Co='; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
 <title>Digital Card | Gibson Kabugi</title>
 <link rel="canonical" href="https://gibson.seepu.co.ke/card/">
 <meta name="description" content="Gibson Kabugi's digital card. Save contact, call, WhatsApp, email, or connect on LinkedIn.">
@@ -131,7 +131,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
   <main class="card">
     <div class="hero">
       <div class="mono" aria-hidden="true">G</div>
-      <img src="photo.jpg" alt="" width="484" height="450" onerror="this.remove()">
+      <img src="photo.jpg" alt="" width="484" height="450">
       <div class="txt">
         <h1>Gibson Kabugi</h1>
         <p>AI Generalist &amp; Enterprise Systems for Local &amp; International Teams, from Nairobi.</p>
@@ -188,6 +188,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
     try{localStorage.setItem('gk-theme',next)}catch(e){}
     sync();
   });
+})();
+
+/* no portrait file yet: fall back to the monogram */
+(function(){
+  var im=document.querySelector('.hero img');
+  if(!im)return;
+  function gone(){if(im.parentNode)im.parentNode.removeChild(im)}
+  im.addEventListener('error',gone);
+  if(im.complete&&im.naturalWidth===0)gone();
 })();
 
 /* anonymous usage counts (view/scan, button taps); see worker/README.md */

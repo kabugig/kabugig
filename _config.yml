@@ -1,0 +1,5 @@
+# Keep non-site files out of the published GitHub Pages output
+exclude:
+  - worker
+  - tools
+  - README.md

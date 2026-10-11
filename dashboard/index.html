@@ -3,14 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-PFObegEG54cDbq+Kt5sEIu2EOFCLqXJWlPDnTavCzY8=' 'sha256-OZTXbCxzchHx8pkLyzsVOeVE2JzGzJqTCyRTSeqMMVo='; style-src 'self' 'sha256-kZH8eLhruM5JbjA4UgYzLlwxV3oikjKkn1YvitNnwrM='; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
 <title>Dashboard | Gibson Kabugi</title>
 <meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0A1733">
 <script>
 (function(){var t=null;try{t=localStorage.getItem('gk-theme')}catch(e){}
 if(t!=='light'&&t!=='dark'){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark'}
 document.documentElement.setAttribute('data-theme',t)})();
+/* never render inside someone else's frame */
+if(window.top!==window.self){document.documentElement.style.display='none'}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A1733'/%3E%3Ctext x='50' y='50' font-family='Cambria,Georgia,serif' font-size='62' font-weight='700' fill='%23F97316' text-anchor='middle' dominant-baseline='central'%3EG%3C/text%3E%3C/svg%3E">
 <style>
@@ -85,6 +88,8 @@ h1 em{font-style:italic;color:var(--orange)}
 .stack .v{background:var(--bar2)}
 .col small{margin-top:6px;font-family:var(--mono);font-size:9.5px;color:var(--ink-mute);white-space:nowrap}
 .legend{display:flex;gap:16px;margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--ink-mute)}
+.legend .lg-s{background:var(--orange)}
+.legend .lg-v{background:var(--bar2)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
 .list{list-style:none;margin:0;padding:0}
 .list li{display:grid;grid-template-columns:1fr auto;gap:12px;padding:8px 0;border-top:1px solid var(--rule);font-size:.98rem;position:relative}
@@ -146,7 +151,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
       <div class="panel wide">
         <h2>Last 14 days</h2>
         <div class="chart" id="chart"></div>
-        <div class="legend"><span><i style="background:var(--orange)"></i>QR scans</span><span><i style="background:var(--bar2)"></i>Direct views</span></div>
+        <div class="legend"><span><i class="lg-s"></i>QR scans</span><span><i class="lg-v"></i>Direct views</span></div>
       </div>
       <div class="panel"><h2>Button taps</h2><ul class="list" id="clicks"></ul></div>
       <div class="panel"><h2>Countries</h2><ul class="list" id="countries"></ul></div>
@@ -162,7 +167,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
 (function(){
   var root=document.documentElement,
       $=function(id){return document.getElementById(id)},
-      pwKey='gk-dash-pw', password='';
+      busy=false;
 
   /* theme toggle, same key as the rest of the site */
   $('themeToggle').addEventListener('click',function(){
@@ -228,39 +233,45 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
     $('note').textContent='All-time totals'+(d.since?' since '+d.since:'')+'. New events can take up to a minute to appear.';
   }
 
-  function fail(msg){
-    $('err').textContent=msg;
-    $('go').disabled=false;
-    $('signin').hidden=false;$('dash').hidden=true;
+  function show(authed){
+    $('signin').hidden=authed;$('dash').hidden=!authed;
   }
 
-  function load(){
-    $('go').disabled=true;$('err').textContent='';
-    return fetch('/api/stats',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({password:password})})
+  function post(path,body){
+    return fetch(path,{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json'},body:JSON.stringify(body||{})});
+  }
+
+  function load(quiet){
+    if(busy)return Promise.resolve();
+    busy=true;
+    return post('/api/stats')
       .then(function(r){
-        if(r.status===401){try{sessionStorage.removeItem(pwKey)}catch(e){}throw new Error('Wrong password.')}
-        if(r.status===429)throw new Error('Too many attempts. Try again in 15 minutes.');
+        if(r.status===401){show(false);if(!quiet)$('err').textContent='Session expired. Sign in again.';return null}
         if(!r.ok)throw new Error('Dashboard is not available yet.');
         return r.json();
       })
-      .then(function(d){
-        try{sessionStorage.setItem(pwKey,password)}catch(e){}
-        render(d);
-        $('signin').hidden=true;$('dash').hidden=false;$('go').disabled=false;
-      })
-      .catch(function(e){fail(e.message||'Something went wrong.')});
+      .then(function(d){if(d){render(d);show(true)}})
+      .catch(function(e){show(false);$('err').textContent=e.message||'Something went wrong.'})
+      .then(function(){busy=false;$('go').disabled=false});
   }
 
   $('signin').addEventListener('submit',function(ev){
-    ev.preventDefault();password=$('pw').value;$('pw').value='';load();
+    ev.preventDefault();
+    var pw=$('pw').value;$('pw').value='';
+    $('go').disabled=true;$('err').textContent='';
+    post('/api/login',{password:pw}).then(function(r){
+      if(r.status===204)return load(true);
+      $('go').disabled=false;
+      $('err').textContent=r.status===429?'Too many attempts. Try again in 15 minutes.':r.status===401?'Wrong password.':'Dashboard is not available yet.';
+    }).catch(function(){$('go').disabled=false;$('err').textContent='Could not reach the server.'});
   });
-  $('refresh').addEventListener('click',load);
+  $('refresh').addEventListener('click',function(){load(false)});
   $('signout').addEventListener('click',function(){
-    try{sessionStorage.removeItem(pwKey)}catch(e){}
-    password='';$('dash').hidden=true;$('signin').hidden=false;
+    post('/api/logout').then(function(){show(false)});
   });
 
-  try{var saved=sessionStorage.getItem(pwKey);if(saved){password=saved;load()}}catch(e){}
+  /* resume an existing session, if the cookie is still valid */
+  load(true);
 })();
 </script>
 </body>
