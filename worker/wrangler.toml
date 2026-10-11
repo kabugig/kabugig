@@ -11,3 +11,12 @@ routes = [
 [[kv_namespaces]]
 binding = "EVENTS"
 id = "a713a754453f49be8f8e3eaf175cfc3c"
+
+# All-time counters (SQLite-backed Durable Object, atomic increments)
+[[durable_objects.bindings]]
+name = "STATS"
+class_name = "Stats"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Stats"]

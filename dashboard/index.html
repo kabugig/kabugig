@@ -225,7 +225,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
       feed.appendChild(li);
     });
 
-    $('note').textContent='Based on the latest '+d.sampled+' events'+(d.truncated?' (older events not shown)':'')+'. New events can take up to a minute to appear.';
+    $('note').textContent='All-time totals'+(d.since?' since '+d.since:'')+'. New events can take up to a minute to appear.';
   }
 
   function fail(msg){

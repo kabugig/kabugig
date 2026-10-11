@@ -16,10 +16,10 @@ The route `gibson.seepu.co.ke/api/*` requires the `gibson` DNS record to be prox
 
 ## What is stored
 
-One KV entry per event, kept indefinitely (no expiry): event type, button tapped, country, city, device class. No IP addresses, no cookies. Failed password attempts are throttled per hashed client (10 per 15 minutes).
+Every event is kept forever in two places: a KV entry per event (feeds the recent-activity list) and all-time daily counters in a SQLite Durable Object (feeds the totals, chart and rankings, so nothing ever drops out). Each event holds: event type, button tapped, country, city, device class. No IP addresses, no cookies. Failed password attempts are throttled per hashed client (10 per 15 minutes).
 
 ## Notes
 
-- The dashboard reads the latest 5,000 events; a banner shows if there are more.
+- Dashboard totals are all-time. The first dashboard load after the counters were introduced imports earlier KV events once.
 - KV is eventually consistent, so a new event can take up to about a minute to appear.
 - The tracking endpoint is public by nature: anyone who knows the URL can post fake events. Fine for a personal card, not for billing-grade numbers.
