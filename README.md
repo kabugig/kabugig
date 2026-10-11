@@ -47,6 +47,13 @@ Personal portfolio for Joan K. Muthoni, executive support and customer operation
 
 One partner. Complete ICT and digital growth. Static marketing site engineered for speed on constrained connections, with an AI visitor assistant running as a Cloudflare Worker at the edge. Strategy, execution, and analytics as one operating model rather than three vendors.
 
+### [Digital card and scan analytics](https://gibson.seepu.co.ke/card/)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Durable Objects](https://img.shields.io/badge/Durable%20Objects-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Static Site](https://img.shields.io/badge/Static%20Site-4B5563?style=flat-square)
+
+The card behind the QR on my business cards: tap-to-save contact, one-tap call, WhatsApp, email, LinkedIn and GitHub, and a private dashboard with all-time scans, button taps, country, city and device. A Cloudflare Worker feeds a SQLite-backed Durable Object for atomic counters, with a KV event log for the activity feed.
+
+> The interesting constraint: GitHub Pages cannot set response headers and a public tracking endpoint is an open invitation to abuse. So the dashboard uses a signed HttpOnly session cookie instead of a stored password, throttling lives in the Durable Object where it cannot be raced, every page runs a hash-based CSP with no unsafe-inline, and no IP address is ever stored.
+
 ### Live sites I built and maintain
 
 **[globalthrive.africa](https://globalthrive.africa/)** · Global Thrive Africa
