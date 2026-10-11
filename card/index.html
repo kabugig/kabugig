@@ -86,11 +86,13 @@ a{color:inherit}
 .body{position:relative;padding:34px 28px 34px;text-align:center;
   background:radial-gradient(520px 320px at 100% 100%,var(--panel-tint),transparent 70%)}
 .bar{display:block;width:50px;height:3px;border-radius:3px;margin:0 auto 26px;background:linear-gradient(90deg,var(--ink),var(--orange))}
-.stats{display:flex;justify-content:center;gap:26px;margin-bottom:26px;flex-wrap:wrap}
+.stats{display:flex;justify-content:center;gap:clamp(16px,5vw,26px);margin-bottom:26px;flex-wrap:wrap}
 .stats div b{display:block;font-size:1.5rem;line-height:1.1;font-weight:700;letter-spacing:.01em;text-transform:uppercase}
 .stats div b em{font-style:normal;color:var(--orange)}
 .stats div span{display:block;margin-top:5px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute)}
 
+.grp{margin:0 0 12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink)}
+.stats+.grp{margin-top:-6px}
 .save{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px 20px;border-radius:999px;background:var(--save-bg);color:var(--save-ink);text-decoration:none;font-family:var(--mono);font-size:15px;font-weight:700;letter-spacing:.02em;box-shadow:0 10px 28px var(--btn-shadow)}
 .save:hover,.save:focus-visible{filter:brightness(1.12)}
 .save svg{width:20px;height:20px}
@@ -142,6 +144,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
         <div><b>10<em>+ Years</em></b><span>Experience</span></div>
         <div><b>20</b><span>Countries</span></div>
         <div><b>CC<em>NA</em></b><span>Certified</span></div>
+      </div>
+      <p class="grp">AI &amp; automation</p>
+      <div class="stats">
+        <div><b>2 <em>Live</em></b><span>LLM apps</span></div>
+        <div><b>70<em>%</em></b><span>Faster drafts</span></div>
+        <div><b>4</b><span>Offices</span></div>
       </div>
 
       <a class="save" href="gibson-kabugi.vcf" download="Gibson Kabugi.vcf">
