@@ -12,7 +12,6 @@
 const SITE = 'https://gibson.seepu.co.ke';
 const TYPES = new Set(['view', 'scan', 'click']);
 const TARGETS = new Set(['save', 'call', 'whatsapp', 'email', 'linkedin', 'github', 'photography', 'portfolio', 'qr']);
-const TTL = 60 * 60 * 24 * 180;      // keep events 180 days
 const PAGES = 5;                      // dashboard reads up to 5 x 1000 events
 const TS_CEIL = 9e12;                 // key = ceil - ts, so newest sorts first
 const TZ_OFFSET = 3 * 3600 * 1000;    // Africa/Nairobi, UTC+3
@@ -57,7 +56,6 @@ async function track(request, env) {
   const key = 'e:' + String(TS_CEIL - ts).padStart(13, '0') + ':' + rand;
 
   await env.EVENTS.put(key, '1', {
-    expirationTtl: TTL,
     metadata: {
       t: body.type,
       g: body.type === 'click' ? body.target : undefined,

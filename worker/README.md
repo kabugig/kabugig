@@ -16,7 +16,7 @@ The route `gibson.seepu.co.ke/api/*` requires the `gibson` DNS record to be prox
 
 ## What is stored
 
-One KV entry per event, kept 180 days: event type, button tapped, country, city, device class. No IP addresses, no cookies. Failed password attempts are throttled per hashed client (10 per 15 minutes).
+One KV entry per event, kept indefinitely (no expiry): event type, button tapped, country, city, device class. No IP addresses, no cookies. Failed password attempts are throttled per hashed client (10 per 15 minutes).
 
 ## Notes
 
