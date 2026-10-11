@@ -6,7 +6,7 @@ Enterprise ERP across 20 countries by day. AI-enabled products and growth infras
 
 Most AI engineering happens on fast connections with cheap compute and mature payment rails. Mine does not. That constraint makes the work better.
 
-[gibson.seepu.co.ke](https://gibson.seepu.co.ke) · [LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · gibson@seepu.co.ke
+[gibson.seepu.co.ke](https://gibson.seepu.co.ke) · [LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · [Digital card](https://gibson.seepu.co.ke/card/) · [Photography](https://kahuna.photos/) · gibson@seepu.co.ke
 
 ---
 
@@ -16,7 +16,7 @@ Most AI engineering happens on fast connections with cheap compute and mature pa
 Anthropic Messages API powering a live order assistant with catalog, category, pricing, and checkout tools. Cloudflare Workers running an LLM visitor assistant at the edge. Content and support pipelines on GPT-4 that cut draft time by 70 percent.
 
 **20 countries · Enterprise systems at multi-country scale**
-NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 & 3 support for 2,000+ users across 12 African countries at EGPAF.
+NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 & 3 support for 2,000+ users across 12 African countries at EGPAF. Freshservice and Freshdesk Expert certified through Freshworks University in 2026, with Freshservice running the ITSM day to day.
 
 **4 country offices · Cloud and identity infrastructure**
 Microsoft 365, Azure, Intune, Entra ID, OKTA, and Active Directory. SharePoint and Power Automate workflow automation designed, deployed, and supported across four country offices. Backed by completed Microsoft Learn coursework in Azure Administrator and Security, Compliance, and Identity Fundamentals: RBAC, Azure Policy, Entra ID governance, Purview, and Defender XDR.
@@ -73,8 +73,8 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 | **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Microsoft Graph, Azure, Intune, Freshservice, Freshdesk |
 | **Identity** | Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory |
 | **Automation** | Python, PowerShell, ARM templates, REST APIs, Wrangler, Power Automate, SharePoint |
-| **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker |
-| **Security** | Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, CSP and security headers, rate limiting, SPF/DKIM/DMARC, CISM in progress |
+| **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker, custom first-party analytics (Upstash Redis, Recharts) |
+| **Security** | Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, web app hardening (CSP, rate limiting, bot filtering, dependency auditing), security headers, SPF/DKIM/DMARC, CISM in progress |
 
 ---
 
@@ -92,7 +92,7 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 
 ## Beyond the code
 
-My documentary photography has been published by the [United Nations](https://news.un.org/sw/story/2024/02/1171737), [WHO](https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&isAllowed=y), and [EGPAF](https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf). Same instinct as the engineering work: understand the people before you build the system.
+My documentary photography has been published by the [United Nations](https://news.un.org/sw/story/2024/02/1171737), [WHO](https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&isAllowed=y), and [EGPAF](https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf). Same instinct as the engineering work: understand the people before you build the system. Professional portfolio at [kahuna.photos](https://kahuna.photos/).
 
 ---
 
@@ -102,4 +102,4 @@ Nairobi · UTC+3
 
 Open to conversations about AI engineering, digital transformation, and enterprise systems roles, particularly where emerging market context is an asset rather than a footnote.
 
-[gibson@seepu.co.ke](mailto:gibson@seepu.co.ke) · [LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · [+254 726 659 469](tel:+254726659469)
+[gibson@seepu.co.ke](mailto:gibson@seepu.co.ke) · [LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · [Digital card](https://gibson.seepu.co.ke/card/) · [Photography](https://kahuna.photos/) · [+254 726 659 469](tel:+254726659469)

@@ -44,13 +44,14 @@ document.documentElement.setAttribute('data-theme',t)})();
   "jobTitle": "Systems and Applications Support",
   "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
   "email": "gibson@seepu.co.ke",
-  "knowsAbout": ["Artificial Intelligence Engineering","NetSuite ERP","Microsoft 365","Azure","Azure Administration","Microsoft Entra ID","Identity Governance","Microsoft Purview","IT Service Management","Freshservice","Cloudflare Workers","Digital Transformation","Cybersecurity","Technical SEO"],
+  "knowsAbout": ["Artificial Intelligence Engineering","NetSuite ERP","Microsoft 365","Azure","Azure Administration","Microsoft Entra ID","Identity Governance","Microsoft Purview","IT Service Management","Freshservice","Freshdesk","Documentary Photography","Cloudflare Workers","Digital Transformation","Cybersecurity","Technical SEO"],
   "sameAs": [
     "https://github.com/kabugig",
     "https://www.linkedin.com/in/gibson-kabugi-9b043250/",
     "https://seepu.co.ke",
     "https://credly.com/users/gibson-kabugi",
-    "https://learn.microsoft.com/en-us/users/gibsonkabugi-8084/"
+    "https://learn.microsoft.com/en-us/users/gibsonkabugi-8084/",
+    "https://kahuna.photos/"
   ],
   "alumniOf": [
     { "@type": "CollegeOrUniversity", "name": "UNICAF University" },
@@ -378,7 +379,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
         <div class="metric">20<small>Countries</small></div>
         <div>
           <h3>Enterprise systems at multi-country scale</h3>
-          <p>NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 and 3 support for 2,000+ users across 12 African countries at EGPAF.</p>
+          <p>NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 and 3 support for 2,000+ users across 12 African countries at EGPAF. Freshservice and Freshdesk Expert certified through Freshworks University in 2026, with Freshservice running the ITSM day to day.</p>
         </div>
       </div>
 
@@ -426,11 +427,11 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
 
       <div class="proj">
         <div class="proj-top">
-          <h3><a href="https://joanmuthoni.co.ke/" target="_blank" rel="noopener noreferrer">Joan Muthoni, Portfolio</a></h3>
+          <h3><a href="https://joanmuthoni.co.ke/" target="_blank" rel="noopener noreferrer">Joan K. Muthoni, Portfolio</a></h3>
         </div>
-        <div class="tech"><i>Next.js 16</i><i>React 19</i><i>Tailwind CSS 4</i><i>Upstash Redis</i><i>Resend</i></div>
-        <p>Personal portfolio for Joan Muthoni Karanja, executive support and customer operations for international teams, from Nairobi. A digital business card with tap-to-save contact and one-tap call, WhatsApp, email and LinkedIn, a QR flow with scan analytics, and Resend-powered resume requests.</p>
-        <p class="note">The interesting constraint: the card's whole job is handing a stranger your phone number and email, but the same one-tap tel: and mailto: links that make it usable are exactly the shape every plaintext-scraping bot looks for. Contact links ship as base64 and decode client-side on click instead of at render, robots.txt shuts crawlers out of the card entirely, and both the login and resume-request endpoints are rate-limited against abuse.</p>
+        <div class="tech"><i>Next.js 16</i><i>React 19</i><i>TypeScript</i><i>Tailwind CSS 4</i><i>Upstash Redis</i><i>Resend</i><i>Vercel</i></div>
+        <p>Personal portfolio for Joan K. Muthoni, executive support and customer operations for local and international teams, from Nairobi. A digital business card with save-to-contacts and one-tap call, WhatsApp, email and LinkedIn, a QR flow feeding a private analytics dashboard (QR scans vs direct visits, button taps, device, country and a recent-activity feed, with no IPs stored), and Resend-powered resume requests.</p>
+        <p class="note">The interesting constraint: the card's whole job is handing a stranger your phone number and email, but the same one-tap tel: and mailto: links that make it usable are exactly the shape every plaintext-scraping bot regexes for. Contact details ship as base64 and decode client-side on click, so neither the HTML nor the JS bundles contain them in plain text, and robots.txt shuts crawlers out of the card entirely. Each button also has a server-side redirect fallback so it still works before hydration and inside in-app browsers; that redirect, the vCard and the tracking beacon refuse known bots and cross-site requests. The login (5/min and 20/hr per IP), the beacon and the resume form are rate-limited, a Redis outage degrades to in-memory limits instead of locking anyone out, and npm audit reports zero production vulnerabilities.</p>
       </div>
 
       <div class="proj">
@@ -559,8 +560,8 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
       <div class="mline"><dt>Enterprise</dt><dd>NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Microsoft Graph, Azure, Intune, Freshservice, Freshdesk</dd></div>
       <div class="mline"><dt>Identity</dt><dd>Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory</dd></div>
       <div class="mline"><dt>Automation</dt><dd>Python, PowerShell, ARM templates, REST APIs, Wrangler, Power Automate, SharePoint</dd></div>
-      <div class="mline"><dt>Data</dt><dd>Power BI, SuiteAnalytics, GA4, Search Console, Looker</dd></div>
-      <div class="mline"><dt>Security</dt><dd>Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, CSP and security headers, rate limiting, SPF/DKIM/DMARC, CISM in progress</dd></div>
+      <div class="mline"><dt>Data</dt><dd>Power BI, SuiteAnalytics, GA4, Search Console, Looker, custom first-party analytics (Upstash Redis, Recharts)</dd></div>
+      <div class="mline"><dt>Security</dt><dd>Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, web app hardening (CSP, rate limiting, bot filtering, dependency auditing), security headers, SPF/DKIM/DMARC, CISM in progress</dd></div>
     </dl>
   </div>
 </section>
@@ -582,7 +583,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
 <section class="beyond">
   <div class="wrap">
     <div class="sec-head"><h2>Beyond the code</h2><span class="line"></span><span class="tag">Documentary</span></div>
-    <p>My documentary photography has been published by the <a href="https://news.un.org/sw/story/2024/02/1171737" target="_blank" rel="noopener noreferrer">United Nations</a>, <a href="https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&amp;isAllowed=y" target="_blank" rel="noopener noreferrer">WHO</a>, and <a href="https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf" target="_blank" rel="noopener noreferrer">EGPAF</a>. Same instinct as the engineering work: understand the people before you build the system.</p>
+    <p>My documentary photography has been published by the <a href="https://news.un.org/sw/story/2024/02/1171737" target="_blank" rel="noopener noreferrer">United Nations</a>, <a href="https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&amp;isAllowed=y" target="_blank" rel="noopener noreferrer">WHO</a>, and <a href="https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf" target="_blank" rel="noopener noreferrer">EGPAF</a>. Same instinct as the engineering work: understand the people before you build the system. Professional portfolio at <a href="https://kahuna.photos/" target="_blank" rel="noopener noreferrer">kahuna.photos</a>.</p>
   </div>
 </section>
 
@@ -595,6 +596,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
       <a href="https://www.linkedin.com/in/gibson-kabugi-9b043250/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/kabugig" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://seepu.co.ke" target="_blank" rel="noopener noreferrer">seepu.co.ke</a>
+      <a href="https://kahuna.photos/" target="_blank" rel="noopener noreferrer">Photography</a>
       <a href="tel:+254726659469">+254 726 659 469</a>
       <a href="/card/">Digital card</a>
       <a href="/qr/">Scan QR</a>
