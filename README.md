@@ -80,7 +80,7 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 
 ## Certifications
 
-**Oracle NetSuite AI Foundations Associate** · **Oracle NetSuite BI and Reporting Associate** · PMI-CPMAI Introduction · Anthropic AI Fluency and Claude 101 · **CCNA v7** · ITIL Foundation · NIST Cybersecurity Framework · Critical Infrastructure Protection (CII/CIP) · Microsoft Azure and M365 Administration · Google Workspace Admin · PMD Pro · ITU Academy Digital Public Infrastructure · **CISM in progress**
+**Oracle NetSuite AI Foundations Associate** · **Oracle NetSuite BI and Reporting Associate** · PMI-CPMAI Introduction · Anthropic AI Fluency and Claude 101 · **Freshservice Expert Certification** · **Freshdesk Expert Certification** · **CCNA v7** · ITIL Foundation · NIST Cybersecurity Framework · Critical Infrastructure Protection (CII/CIP) · Microsoft Azure and M365 Administration · Microsoft Azure Administrator · Microsoft Security, Compliance, and Identity Fundamentals · Microsoft Azure Fundamentals · Google Workspace Admin · PMD Pro · ITU Academy Digital Public Infrastructure · **CISM in progress**
 
 [Full verified list on Credly →](https://credly.com/users/gibson-kabugi)
 
