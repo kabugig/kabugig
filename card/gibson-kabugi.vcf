@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Kabugi;Gibson;;;
+FN:Gibson Kabugi
+ORG:SeePU Solutions
+TITLE:AI Engineering & Enterprise Systems
+TEL;TYPE=CELL,VOICE:+254726659469
+EMAIL;TYPE=INTERNET,WORK:gibson@seepu.co.ke
+URL:https://gibson.seepu.co.ke
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/gibson-kabugi-9b043250/
+URL;TYPE=GitHub:https://github.com/kabugig
+ADR;TYPE=WORK:;;;Nairobi;;;Kenya
+NOTE:I ship production systems from Nairobi. NetSuite ERP across 20 countries\, AI in production\, Microsoft 365 and Azure.
+END:VCARD
