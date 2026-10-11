@@ -189,6 +189,25 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline
     sync();
   });
 })();
+
+/* anonymous usage counts (view/scan, button taps); see worker/README.md */
+(function(){
+  function send(body){
+    try{fetch('/api/track',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body),keepalive:true}).catch(function(){})}catch(e){}
+  }
+  var scan=/[?&]src=qr(&|$)/.test(location.search),seen=false;
+  try{seen=sessionStorage.getItem('gk-seen')==='1';sessionStorage.setItem('gk-seen','1')}catch(e){}
+  if(!seen)send({type:scan?'scan':'view'});
+
+  var map=[['tel:','call'],['wa.me','whatsapp'],['mailto:','email'],['linkedin.com','linkedin'],['github.com','github'],['kahuna.photos','photography'],['.vcf','save'],['/qr/','qr']];
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest&&ev.target.closest('a');if(!a)return;
+    var href=a.getAttribute('href')||'',t=null;
+    if(href==='/')t='portfolio';
+    for(var i=0;i<map.length&&!t;i++)if(href.indexOf(map[i][0])!==-1)t=map[i][1];
+    if(t)send({type:'click',target:t});
+  });
+})();
 </script>
 </body>
 </html>

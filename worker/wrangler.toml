@@ -1,0 +1,13 @@
+name = "gibson-card-analytics"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Serve the API on the same origin as the site so the page's CSP (connect-src 'self') is unchanged.
+# Needs the gibson.seepu.co.ke DNS record proxied (orange cloud) on the seepu.co.ke zone.
+routes = [
+  { pattern = "gibson.seepu.co.ke/api/*", zone_name = "seepu.co.ke" }
+]
+
+[[kv_namespaces]]
+binding = "EVENTS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"

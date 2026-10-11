@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /dashboard/
+Disallow: /api/
 
 # AI crawlers, explicitly welcomed for AEO/GEO discoverability
 User-agent: GPTBot

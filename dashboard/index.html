@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
+<title>Dashboard | Gibson Kabugi</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A1733">
+<script>
+(function(){var t=null;try{t=localStorage.getItem('gk-theme')}catch(e){}
+if(t!=='light'&&t!=='dark'){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark'}
+document.documentElement.setAttribute('data-theme',t)})();
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A1733'/%3E%3Ctext x='50' y='50' font-family='Cambria,Georgia,serif' font-size='62' font-weight='700' fill='%23F97316' text-anchor='middle' dominant-baseline='central'%3EG%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --serif:Cambria,"Bitstream Charter","Charis SIL",Georgia,"Times New Roman",serif;
+  --mono:"Cascadia Mono",Consolas,"SF Mono",ui-monospace,monospace;
+}
+:root,[data-theme="dark"]{
+  --bg:#0A1733;--ink:#FFFFFF;--ink-soft:rgba(255,255,255,.78);--ink-mute:rgba(255,255,255,.58);
+  --rule:rgba(255,255,255,.14);--rule-strong:rgba(255,255,255,.28);
+  --surface:rgba(255,255,255,.06);--mast-bg:rgba(10,23,51,.86);
+  --orange:#F97316;--orange-hi:#EA630B;--accent-ink:#F97316;--btn-shadow:rgba(249,115,22,.32);
+  --page-a:#0A1733;--page-b:#14286B;--field:rgba(255,255,255,.08);--bar2:rgba(255,255,255,.55);
+}
+[data-theme="light"]{
+  --bg:#F4F6FB;--ink:#0A1733;--ink-soft:rgba(10,23,51,.82);--ink-mute:rgba(10,23,51,.66);
+  --rule:rgba(10,23,51,.14);--rule-strong:rgba(10,23,51,.26);
+  --surface:rgba(255,255,255,.6);--mast-bg:rgba(244,246,251,.88);
+  --orange:#C74905;--orange-hi:#B03D06;--accent-ink:#B8410A;--btn-shadow:rgba(199,73,5,.3);
+  --page-a:#FFFFFF;--page-b:#D3DEF8;--field:rgba(255,255,255,.8);--bar2:rgba(10,23,51,.5);
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);background:linear-gradient(128deg,var(--page-a),var(--page-b));background-attachment:fixed;min-height:100vh;font-family:var(--serif);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.masthead{border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--mast-bg);backdrop-filter:blur(10px);z-index:30}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:62px;max-width:1060px;margin:0 auto;padding:0 28px}
+.mark{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.mark span{color:var(--accent-ink)}
+.navlinks{display:flex;align-items:center;gap:18px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.navlinks a{color:var(--ink-mute);text-decoration:none}
+.themetoggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;border:1px solid var(--rule);border-radius:50%;background:var(--surface);color:var(--ink-soft);cursor:pointer}
+.themetoggle svg{width:17px;height:17px;display:block}
+.themetoggle .i-moon{display:none}
+[data-theme="light"] .themetoggle .i-sun{display:none}
+[data-theme="light"] .themetoggle .i-moon{display:block}
+@media(max-width:480px){.masthead .wrap{padding:0 16px}.mark{font-size:clamp(9.5px,3vw,12.5px);letter-spacing:.08em}}
+
+.page{max-width:1060px;margin:0 auto;padding:44px 28px 70px}
+@media(max-width:480px){.page{padding:32px 16px 56px}}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 10px}
+.kicker em{font-style:normal;color:var(--accent-ink);border-bottom:2px solid var(--orange)}
+h1{font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 6px}
+h1 em{font-style:italic;color:var(--orange)}
+
+/* sign in */
+.signin{max-width:360px;margin:12vh auto 0;text-align:center}
+.signin label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);margin:26px 0 8px}
+.signin input{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--rule-strong);background:var(--field);color:var(--ink);font:inherit;font-size:1rem}
+.signin input:focus{outline:2px solid var(--orange);outline-offset:2px}
+.btn{display:block;width:100%;margin-top:14px;padding:14px 20px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--orange-hi),var(--orange));color:#fff;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 22px var(--btn-shadow)}
+.btn:disabled{opacity:.6;cursor:wait}
+.err{min-height:1.4em;margin:12px 0 0;color:var(--accent-ink);font-family:var(--mono);font-size:12.5px}
+
+/* dashboard */
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:26px}
+.tools{display:flex;gap:10px}
+.ghost{padding:9px 16px;border:1px solid var(--rule-strong);border-radius:999px;background:var(--surface);color:var(--ink);font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.ghost:hover,.ghost:focus-visible{border-color:var(--orange)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:18px}
+.kpi,.panel{border:1px solid var(--rule);border-radius:18px;background:var(--surface);padding:18px 20px}
+.kpi b{display:block;font-size:2.1rem;line-height:1.1;letter-spacing:-.01em}
+.kpi b.o{color:var(--orange)}
+.kpi span,.panel h2{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);margin:6px 0 0}
+.panel h2{margin:0 0 14px;font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.wide{grid-column:1/-1}
+.chart{display:flex;align-items:flex-end;gap:6px;height:150px}
+.col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:0}
+.stack{width:100%;display:flex;flex-direction:column;justify-content:flex-end;flex:1}
+.stack i{display:block;width:100%;min-height:0}
+.stack .s{background:var(--orange);border-radius:4px 4px 0 0}
+.stack .v{background:var(--bar2)}
+.col small{margin-top:6px;font-family:var(--mono);font-size:9.5px;color:var(--ink-mute);white-space:nowrap}
+.legend{display:flex;gap:16px;margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--ink-mute)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:grid;grid-template-columns:1fr auto;gap:12px;padding:8px 0;border-top:1px solid var(--rule);font-size:.98rem;position:relative}
+.list li:first-child{border-top:0}
+.list li span:last-child{font-family:var(--mono);font-size:13px;color:var(--accent-ink)}
+.bar{position:absolute;left:0;bottom:0;height:2px;background:var(--orange);opacity:.55}
+.empty{color:var(--ink-mute);font-family:var(--mono);font-size:12.5px;margin:0}
+.feed li{grid-template-columns:auto 1fr auto;font-size:.95rem}
+.feed time{font-family:var(--mono);font-size:11.5px;color:var(--ink-mute)}
+.note{margin:18px 0 0;font-family:var(--mono);font-size:11.5px;color:var(--ink-mute)}
+[hidden]{display:none!important}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent-ink);outline-offset:3px}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="/">GIBSON KABUGI <span>/</span> NBO</a>
+    <nav class="navlinks">
+      <a href="/card/">Card</a>
+      <button class="themetoggle" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="page">
+  <form class="signin" id="signin" autocomplete="off">
+    <p class="kicker">Scan <em>dashboard</em></p>
+    <h1>Sign <em>in</em></h1>
+    <label for="pw">Password</label>
+    <input id="pw" name="pw" type="password" autocomplete="current-password" required>
+    <button class="btn" id="go" type="submit">View dashboard</button>
+    <p class="err" id="err" role="alert"></p>
+  </form>
+
+  <div id="dash" hidden>
+    <div class="head">
+      <div>
+        <p class="kicker">Scan <em>dashboard</em></p>
+        <h1>Card <em>activity</em></h1>
+      </div>
+      <div class="tools">
+        <button class="ghost" id="refresh" type="button">Refresh</button>
+        <button class="ghost" id="signout" type="button">Sign out</button>
+      </div>
+    </div>
+
+    <div class="kpis">
+      <div class="kpi"><b class="o" id="k-scans">0</b><span>QR scans</span></div>
+      <div class="kpi"><b id="k-views">0</b><span>Direct views</span></div>
+      <div class="kpi"><b id="k-clicks">0</b><span>Button taps</span></div>
+      <div class="kpi"><b id="k-rate">0%</b><span>Tap rate</span></div>
+    </div>
+
+    <div class="grid">
+      <div class="panel wide">
+        <h2>Last 14 days</h2>
+        <div class="chart" id="chart"></div>
+        <div class="legend"><span><i style="background:var(--orange)"></i>QR scans</span><span><i style="background:var(--bar2)"></i>Direct views</span></div>
+      </div>
+      <div class="panel"><h2>Button taps</h2><ul class="list" id="clicks"></ul></div>
+      <div class="panel"><h2>Countries</h2><ul class="list" id="countries"></ul></div>
+      <div class="panel"><h2>Cities</h2><ul class="list" id="cities"></ul></div>
+      <div class="panel"><h2>Devices</h2><ul class="list" id="devices"></ul></div>
+      <div class="panel wide"><h2>Recent activity</h2><ul class="list feed" id="recent"></ul></div>
+    </div>
+    <p class="note" id="note"></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement,
+      $=function(id){return document.getElementById(id)},
+      pwKey='gk-dash-pw', password='';
+
+  /* theme toggle, same key as the rest of the site */
+  $('themeToggle').addEventListener('click',function(){
+    var next=root.getAttribute('data-theme')==='light'?'dark':'light';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('gk-theme',next)}catch(e){}
+  });
+
+  var LABELS={save:'Save Contact',call:'Call',whatsapp:'WhatsApp',email:'Email',linkedin:'LinkedIn',github:'GitHub',photography:'Photography',portfolio:'Portfolio',qr:'QR page',other:'Other'};
+  var CTRY=(typeof Intl!=='undefined'&&Intl.DisplayNames)?new Intl.DisplayNames(['en'],{type:'region'}):null;
+  function country(c){if(!c||c==='??')return 'Unknown';try{return CTRY?CTRY.of(c)||c:c}catch(e){return c}}
+  function el(tag,text,cls){var n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;return n}
+
+  function fillList(id,rows,label){
+    var ul=$(id);ul.textContent='';
+    if(!rows.length){var li=el('li');li.appendChild(el('p','No data yet','empty'));ul.appendChild(li);return}
+    var max=rows[0].count;
+    rows.forEach(function(r){
+      var li=el('li');
+      li.appendChild(el('span',label?label(r.name):r.name));
+      li.appendChild(el('span',String(r.count)));
+      var b=el('i',null,'bar');b.style.width=Math.max(4,Math.round(r.count/max*100))+'%';li.appendChild(b);
+      ul.appendChild(li);
+    });
+  }
+
+  function render(d){
+    var t=d.totals,opens=t.scans+t.views;
+    $('k-scans').textContent=t.scans;
+    $('k-views').textContent=t.views;
+    $('k-clicks').textContent=t.clicks;
+    $('k-rate').textContent=opens?Math.round(t.clicks/opens*100)+'%':'0%';
+
+    var chart=$('chart');chart.textContent='';
+    var max=Math.max(1,Math.max.apply(null,d.days.map(function(x){return x.scans+x.views})));
+    d.days.forEach(function(x){
+      var col=el('div',null,'col'),stack=el('div',null,'stack');
+      var v=el('i',null,'v'),s=el('i',null,'s');
+      v.style.height=(x.views/max*100)+'%';s.style.height=(x.scans/max*100)+'%';
+      stack.appendChild(v);stack.appendChild(s);
+      col.title=x.date+': '+x.scans+' scans, '+x.views+' views';
+      col.appendChild(stack);col.appendChild(el('small',x.date.slice(8)));
+      chart.appendChild(col);
+    });
+
+    fillList('clicks',d.clicks,function(n){return LABELS[n]||n});
+    fillList('countries',d.countries,function(n){return country(n)});
+    fillList('cities',d.cities);
+    fillList('devices',d.devices);
+
+    var feed=$('recent');feed.textContent='';
+    if(!d.recent.length){var li=el('li');li.appendChild(el('p','No activity yet. Open the card to generate the first event.','empty'));feed.appendChild(li)}
+    d.recent.forEach(function(e){
+      var li=el('li');
+      var when=new Date(e.ts);
+      li.appendChild(el('time',when.toLocaleString([], {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})));
+      var what=e.t==='scan'?'QR scan':e.t==='click'?'Tapped '+(LABELS[e.g]||e.g):'Card view';
+      li.appendChild(el('span',what));
+      li.appendChild(el('span',[e.ci,country(e.c)].filter(Boolean).join(', ')));
+      feed.appendChild(li);
+    });
+
+    $('note').textContent='Based on the latest '+d.sampled+' events'+(d.truncated?' (older events not shown)':'')+'. New events can take up to a minute to appear.';
+  }
+
+  function fail(msg){
+    $('err').textContent=msg;
+    $('go').disabled=false;
+    $('signin').hidden=false;$('dash').hidden=true;
+  }
+
+  function load(){
+    $('go').disabled=true;$('err').textContent='';
+    return fetch('/api/stats',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({password:password})})
+      .then(function(r){
+        if(r.status===401){try{sessionStorage.removeItem(pwKey)}catch(e){}throw new Error('Wrong password.')}
+        if(r.status===429)throw new Error('Too many attempts. Try again in 15 minutes.');
+        if(!r.ok)throw new Error('Dashboard is not available yet.');
+        return r.json();
+      })
+      .then(function(d){
+        try{sessionStorage.setItem(pwKey,password)}catch(e){}
+        render(d);
+        $('signin').hidden=true;$('dash').hidden=false;$('go').disabled=false;
+      })
+      .catch(function(e){fail(e.message||'Something went wrong.')});
+  }
+
+  $('signin').addEventListener('submit',function(ev){
+    ev.preventDefault();password=$('pw').value;$('pw').value='';load();
+  });
+  $('refresh').addEventListener('click',load);
+  $('signout').addEventListener('click',function(){
+    try{sessionStorage.removeItem(pwKey)}catch(e){}
+    password='';$('dash').hidden=true;$('signin').hidden=false;
+  });
+
+  try{var saved=sessionStorage.getItem(pwKey);if(saved){password=saved;load()}}catch(e){}
+})();
+</script>
+</body>
+</html>
