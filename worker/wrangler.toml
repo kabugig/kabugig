@@ -10,4 +10,4 @@ routes = [
 
 [[kv_namespaces]]
 binding = "EVENTS"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "a713a754453f49be8f8e3eaf175cfc3c"
