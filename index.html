@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-aEhOINm6y8tZLstyfU07qPWaMwVyOYMgfCgKAzom0pI=' 'sha256-NNfFBVm5pezsoWrn7zsDV8+cLxRG8kc4KvBhEe3/Q+g='; style-src 'self' 'sha256-VQGcNY5nHPmc8uZ10sazAGCaxJDykVvCNxdq3JKOOEA='; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-aEhOINm6y8tZLstyfU07qPWaMwVyOYMgfCgKAzom0pI=' 'sha256-NNfFBVm5pezsoWrn7zsDV8+cLxRG8kc4KvBhEe3/Q+g='; style-src 'self' 'sha256-IKPHQcPvprbb+qHQ0xbSdZg05T2COuIJOVpPFFoEF20='; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
 <title>Gibson Kabugi | AI Engineering &amp; Enterprise Systems, Nairobi Kenya</title>
 
 <link rel="canonical" href="https://gibson.seepu.co.ke/">
@@ -255,6 +255,8 @@ section{padding:70px 0;border-bottom:1px solid var(--rule)}
 .proj-top h3 a{text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:2px}
 .proj-top h3 a:hover,.proj-top h3 a:focus-visible{color:var(--orange)}
 .stack-line{font-family:var(--mono);font-size:11.5px;color:var(--ink-mute);letter-spacing:.03em}
+.tech{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 15px}
+.tech i{font-style:normal;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;padding:6px 12px;border:1px solid var(--orange);border-radius:999px;color:var(--accent-ink);background:var(--surface)}
 .proj p{margin:0 0 13px;color:var(--ink-soft);max-width:74ch;font-size:1rem}
 .note{border-left:2px solid var(--orange);padding-left:17px;color:var(--ink-mute);font-size:.96rem;max-width:70ch}
 .livegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));border-top:1px solid var(--rule)}
@@ -416,8 +418,8 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
       <div class="proj">
         <div class="proj-top">
           <h3><a href="https://www.muthonibakehouse.co.ke/" target="_blank" rel="noopener noreferrer">Muthoni's Bake House (MBH)</a></h3>
-          <span class="stack-line">Next.js 16 &middot; React 19 &middot; TypeScript &middot; Sanity 6 &middot; Anthropic SDK &middot; Vercel</span>
         </div>
+        <div class="tech"><i>Next.js 16</i><i>React 19</i><i>TypeScript</i><i>Sanity 6</i><i>Anthropic Messages API</i><i>Tool use</i><i>Microsoft Graph Mail</i><i>WhatsApp handoff</i><i>Vercel</i></div>
         <p>Full-stack bakery storefront and content platform for the Kenyan market. Sanity-backed catalog with KES pricing tiers, client-side cart, and an AI order assistant built on the Anthropic Messages API with tool use for catalog lookup, pricing, and order handoff. Split datasets separate public content from private order and subscriber data. Microsoft Graph Mail for notifications, structured Bakery schema, sitemap, and analytics.</p>
         <p class="note">The interesting constraint: card penetration is low and cart abandonment at a payment wall is high, so checkout hands off to WhatsApp where the customer already is. M-Pesa Daraja is on the roadmap. Designing for the payment rails people actually use is the difference between a working store and a portfolio piece.</p>
       </div>
@@ -425,8 +427,8 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
       <div class="proj">
         <div class="proj-top">
           <h3><a href="https://joanmuthoni.co.ke/" target="_blank" rel="noopener noreferrer">Joan Muthoni, Portfolio</a></h3>
-          <span class="stack-line">Next.js 16 &middot; React 19 &middot; Tailwind CSS 4 &middot; Upstash Redis &middot; Resend</span>
         </div>
+        <div class="tech"><i>Next.js 16</i><i>React 19</i><i>Tailwind CSS 4</i><i>Upstash Redis</i><i>Resend</i></div>
         <p>Personal portfolio for Joan Muthoni Karanja, executive support and customer operations for international teams, from Nairobi. A digital business card with tap-to-save contact and one-tap call, WhatsApp, email and LinkedIn, a QR flow with scan analytics, and Resend-powered resume requests.</p>
         <p class="note">The interesting constraint: the card's whole job is handing a stranger your phone number and email, but the same one-tap tel: and mailto: links that make it usable are exactly the shape every plaintext-scraping bot looks for. Contact links ship as base64 and decode client-side on click instead of at render, robots.txt shuts crawlers out of the card entirely, and both the login and resume-request endpoints are rate-limited against abuse.</p>
       </div>
@@ -434,16 +436,16 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
       <div class="proj">
         <div class="proj-top">
           <h3><a href="https://seepu.co.ke/" target="_blank" rel="noopener noreferrer">SeePU Solutions</a></h3>
-          <span class="stack-line">Static site &middot; Cloudflare Workers &middot; LLM assistant</span>
         </div>
+        <div class="tech"><i>Static site</i><i>Cloudflare Workers</i><i>LLM assistant</i></div>
         <p>One partner. Complete ICT and digital growth. Static marketing site engineered for speed on constrained connections, with an AI visitor assistant running as a Cloudflare Worker at the edge. Strategy, execution, and analytics as one operating model rather than three vendors.</p>
       </div>
 
       <div class="proj">
         <div class="proj-top">
           <h3><a href="/card/">Digital card and scan analytics</a></h3>
-          <span class="stack-line">Cloudflare Workers &middot; Durable Objects &middot; KV &middot; Static site</span>
         </div>
+        <div class="tech"><i>Cloudflare Workers</i><i>Durable Objects (SQLite)</i><i>Workers KV</i><i>GitHub Pages</i><i>Cloudflare Transform Rules</i><i>WebCrypto HMAC</i><i>Hash-based CSP</i></div>
         <p>The card behind the QR on my business cards: tap-to-save contact, one-tap call, WhatsApp, email, LinkedIn and GitHub, and a private dashboard with all-time scans, button taps, country, city and device. A Cloudflare Worker feeds a SQLite-backed Durable Object for atomic counters, with a KV event log for the activity feed.</p>
         <p class="note">The interesting constraint: GitHub Pages cannot set response headers and a public tracking endpoint is an open invitation to abuse. So the dashboard uses a signed HttpOnly session cookie instead of a stored password, throttling lives in the Durable Object where it cannot be raced, every page runs a hash-based CSP with no unsafe-inline, and no IP address is ever stored.</p>
       </div>
@@ -552,13 +554,13 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
   <div class="wrap">
     <div class="sec-head"><h2>Stack</h2><span class="line"></span><span class="tag">Working tools</span></div>
     <dl class="manifest">
-      <div class="mline"><dt>AI</dt><dd>Anthropic Claude, tool use, agentic pipelines, Claude Code, GPT-4</dd></div>
-      <div class="mline"><dt>Web</dt><dd>Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, WordPress, Resend</dd></div>
-      <div class="mline"><dt>Enterprise</dt><dd>NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Azure, Intune, Freshservice</dd></div>
+      <div class="mline"><dt>AI</dt><dd>Anthropic Claude, Messages API, tool use, agentic pipelines, Claude Code, GPT-4</dd></div>
+      <div class="mline"><dt>Web</dt><dd>Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, WordPress, Resend</dd></div>
+      <div class="mline"><dt>Enterprise</dt><dd>NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Microsoft Graph, Azure, Intune, Freshservice</dd></div>
       <div class="mline"><dt>Identity</dt><dd>Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory</dd></div>
-      <div class="mline"><dt>Automation</dt><dd>Python, PowerShell, ARM templates, REST APIs, Power Automate, SharePoint</dd></div>
+      <div class="mline"><dt>Automation</dt><dd>Python, PowerShell, ARM templates, REST APIs, Wrangler, Power Automate, SharePoint</dd></div>
       <div class="mline"><dt>Data</dt><dd>Power BI, SuiteAnalytics, GA4, Search Console, Looker</dd></div>
-      <div class="mline"><dt>Security</dt><dd>Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, CISM in progress</dd></div>
+      <div class="mline"><dt>Security</dt><dd>Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, CSP and security headers, rate limiting, SPF/DKIM/DMARC, CISM in progress</dd></div>
     </dl>
   </div>
 </section>

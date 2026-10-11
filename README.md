@@ -68,13 +68,13 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 
 | | |
 |---|---|
-| **AI** | Anthropic Claude, tool use, agentic pipelines, Claude Code, GPT-4 |
-| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Vercel, Upstash Redis, WordPress, Resend |
-| **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Azure, Intune, Freshservice |
+| **AI** | Anthropic Claude, Messages API, tool use, agentic pipelines, Claude Code, GPT-4 |
+| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, WordPress, Resend |
+| **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Microsoft Graph, Azure, Intune, Freshservice |
 | **Identity** | Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory |
-| **Automation** | Python, PowerShell, ARM templates, REST APIs, Power Automate, SharePoint |
-| **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker, custom first-party analytics (Upstash Redis, Recharts) |
-| **Security** | Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, web app hardening (CSP, rate limiting, bot filtering, dependency auditing), CISM in progress |
+| **Automation** | Python, PowerShell, ARM templates, REST APIs, Wrangler, Power Automate, SharePoint |
+| **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker |
+| **Security** | Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, CSP and security headers, rate limiting, SPF/DKIM/DMARC, CISM in progress |
 
 ---
 
