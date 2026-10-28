@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-aEhOINm6y8tZLstyfU07qPWaMwVyOYMgfCgKAzom0pI=' 'sha256-NNfFBVm5pezsoWrn7zsDV8+cLxRG8kc4KvBhEe3/Q+g='; style-src 'self' 'sha256-/U16BT/yUHCpJY/caJ9uJpLV5TNiRTB7bLLNogEc40M='; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-aEhOINm6y8tZLstyfU07qPWaMwVyOYMgfCgKAzom0pI=' 'sha256-NNfFBVm5pezsoWrn7zsDV8+cLxRG8kc4KvBhEe3/Q+g='; style-src 'self' 'sha256-TG35nIAp1xXQB5xSVSjGz3J/lFR2gen1q4ZuCALbgrI='; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'">
 <title>Gibson Kabugi | AI Engineering &amp; Enterprise Systems, Nairobi Kenya</title>
 
 <link rel="canonical" href="https://gibson.seepu.co.ke/">
@@ -256,6 +256,7 @@ section{padding:70px 0;border-bottom:1px solid var(--rule)}
 .proj-top h3 a{text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:2px}
 .proj-top h3 a:hover,.proj-top h3 a:focus-visible{color:var(--orange)}
 .stack-line{font-family:var(--mono);font-size:11.5px;color:var(--ink-mute);letter-spacing:.03em}
+.status{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);border:1px dashed var(--rule-strong);border-radius:999px;padding:2px 9px}
 .tech{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 13px}
 .tech i{font-style:normal;font-family:var(--mono);font-size:10px;font-weight:400;letter-spacing:.03em;line-height:1.3;padding:3px 9px;border:1px solid var(--orange);border-radius:999px;color:var(--accent-ink);background:var(--surface)}
 .proj p{margin:0 0 13px;color:var(--ink-soft);max-width:74ch;font-size:1rem}
@@ -427,6 +428,15 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
 
       <div class="proj">
         <div class="proj-top">
+          <h3><a href="https://equitablehomes.co.ke/" target="_blank" rel="noopener noreferrer">Equitable Homes</a></h3>
+        </div>
+        <div class="tech"><i>Next.js 16</i><i>React 19</i><i>TypeScript</i><i>Tailwind CSS 4</i><i>Sanity</i><i>Cloudflare Workers</i><i>R2</i><i>D1</i><i>MapLibre GL</i><i>Protomaps</i><i>GSAP</i><i>Resend</i><i>Turnstile</i><i>Anthropic API</i></div>
+        <p>Marketing and listings site for Equitable Homes Real Estate Limited in Kenya: land, projects with plot-level site plans, homes, rentals, commercial property, vehicles and guides. Content lives in Sanity, with Studio embedded at /studio and draft preview, and the site runs on Cloudflare Workers through OpenNext. Every public form sits behind Turnstile with Resend alerts, and an AI advisor on the Anthropic API answers only from published content and links every page it cites.</p>
+        <p class="note">The interesting constraint: the editors are not technical, and the usual paid map layers were off the table. Every routine change has to work in Sanity Studio without a developer, so the optional catalogues (homes, commercial, vehicles, guides) get no header link or sitemap entry until an editor publishes the first document of that kind. Esri's free satellite tier bars revenue-generating apps and Mapbox's terms name real estate as needing a paid licence, so the maps run on self-hosted Protomaps tiles on R2, with no third party in the request path.</p>
+      </div>
+
+      <div class="proj">
+        <div class="proj-top">
           <h3><a href="https://joanmuthoni.co.ke/" target="_blank" rel="noopener noreferrer">Joan K. Muthoni, Portfolio</a></h3>
         </div>
         <div class="tech"><i>Next.js 16</i><i>React 19</i><i>TypeScript</i><i>Tailwind CSS 4</i><i>Upstash Redis</i><i>Resend</i><i>Vercel</i></div>
@@ -449,6 +459,25 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
         <div class="tech"><i>Cloudflare Workers</i><i>Durable Objects (SQLite)</i><i>Workers KV</i><i>GitHub Pages</i><i>Cloudflare Transform Rules</i><i>WebCrypto HMAC</i><i>Hash-based CSP</i></div>
         <p>The card behind the QR on my business cards: tap-to-save contact, one-tap call, WhatsApp, email, LinkedIn and GitHub, and a private dashboard with all-time scans, button taps, country, city and device. A Cloudflare Worker feeds a SQLite-backed Durable Object for atomic counters, with a KV event log for the activity feed.</p>
         <p class="note">The interesting constraint: GitHub Pages cannot set response headers and a public tracking endpoint is an open invitation to abuse. So the dashboard uses a signed HttpOnly session cookie instead of a stored password, throttling lives in the Durable Object where it cannot be raced, every page runs a hash-based CSP with no unsafe-inline, and no IP address is ever stored.</p>
+      </div>
+      <div class="proj">
+        <div class="proj-top">
+          <h3>SeePU ContentOS</h3>
+          <span class="status">In build</span>
+        </div>
+        <div class="tech"><i>Node.js</i><i>Claude Code skills</i><i>Postiz API</i><i>Microsoft 365</i><i>GA4</i><i>Looker Studio</i></div>
+        <p>Productized AI content generation and multi-platform publishing. SeePU owns the engine, each client owns their output, and that split is written into every client agreement. A new client onboards by copying a template folder, and the engine is not edited. It holds a voice framework, a prompt library, verified platform constraints, SOPs, a validator and a Postiz scheduling client. Engine v0.1: the pilot client, Muthoni's Bake House, is not yet live.</p>
+        <p class="note">The interesting constraint: generated content must never go out under a client's name without their sign-off. The scheduler refuses any batch that lacks a named approver, a timestamp and stored evidence of approval, and a rule file stops the engine being changed during onboarding, so the product claim holds or fails loudly.</p>
+      </div>
+
+      <div class="proj">
+        <div class="proj-top">
+          <h3>KaziFit</h3>
+          <span class="status">Concept</span>
+        </div>
+        <div class="tech"><i>Next.js 16</i><i>TypeScript</i><i>Supabase</i><i>Anthropic API</i><i>M-Pesa</i><i>Vercel</i></div>
+        <p>Application platform for African professionals going for UN, African Union, Africa CDC, INGO and donor roles, priced in KES and paid by M-Pesa. A free, no-signup vacancy check reports what was and was not found about a posting, and the paid layer maps a user's confirmed profile to each requirement before tailoring the CV and cover letter. A specification and a single-file prototype exist; there is no production build and no users yet, and the stack shown is the planned one.</p>
+        <p class="note">The interesting constraint: Kenyan job seekers are targeted by recruitment fraud, so the vacancy check never calls a posting or employer safe, legitimate or a scam. It reports the sources checked and what it found and did not find, with no trust score out of 100, and generation draws only on the user's confirmed profile so it cannot invent a credential.</p>
       </div>
     </div>
   </div>
@@ -556,10 +585,10 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
     <div class="sec-head"><h2>Stack</h2><span class="line"></span><span class="tag">Working tools</span></div>
     <dl class="manifest">
       <div class="mline"><dt>AI</dt><dd>Anthropic Claude, Messages API, tool use, agentic pipelines, Claude Code, GPT-4</dd></div>
-      <div class="mline"><dt>Web</dt><dd>Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, WordPress, Resend</dd></div>
+      <div class="mline"><dt>Web</dt><dd>Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, OpenNext, Cloudflare R2 and D1, MapLibre GL, Turnstile, WordPress, Resend</dd></div>
       <div class="mline"><dt>Enterprise</dt><dd>NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Microsoft Graph, Azure, Intune, Freshservice, Freshdesk</dd></div>
       <div class="mline"><dt>Identity</dt><dd>Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory</dd></div>
-      <div class="mline"><dt>Automation</dt><dd>Python, PowerShell, ARM templates, REST APIs, Wrangler, Power Automate, SharePoint</dd></div>
+      <div class="mline"><dt>Automation</dt><dd>Python, PowerShell, ARM templates, REST APIs, Wrangler, Postiz, Power Automate, SharePoint</dd></div>
       <div class="mline"><dt>Data</dt><dd>Power BI, SuiteAnalytics, GA4, Search Console, Looker, custom first-party analytics (Upstash Redis, Recharts)</dd></div>
       <div class="mline"><dt>Security</dt><dd>Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, web app hardening (CSP, rate limiting, bot filtering, dependency auditing), security headers, SPF/DKIM/DMARC, CISM in progress</dd></div>
     </dl>

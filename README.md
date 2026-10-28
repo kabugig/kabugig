@@ -35,6 +35,13 @@ Full-stack bakery storefront and content platform for the Kenyan market. Sanity-
 
 > The interesting constraint: card penetration is low and cart abandonment at a payment wall is high, so checkout hands off to WhatsApp where the customer already is. M-Pesa Daraja is on the roadmap. Designing for the payment rails people actually use is the difference between a working store and a portfolio piece.
 
+### [Equitable Homes](https://equitablehomes.co.ke/)
+![Next.js 16](https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React 19](https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=000000) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS 4](https://img.shields.io/badge/Tailwind%20CSS%204-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Sanity](https://img.shields.io/badge/Sanity-F03E2F?style=flat-square&logo=sanity&logoColor=white) ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![MapLibre GL](https://img.shields.io/badge/MapLibre%20GL-396CB2?style=flat-square&logo=maplibre&logoColor=white) ![Anthropic API](https://img.shields.io/badge/Anthropic%20API-D97757?style=flat-square&logo=anthropic&logoColor=white)
+
+Marketing and listings site for Equitable Homes Real Estate Limited in Kenya: land, projects with plot-level site plans, homes, rentals, commercial property, vehicles and guides. Content lives in Sanity, with Studio embedded at /studio and draft preview, and the site runs on Cloudflare Workers through OpenNext, with R2 and D1 behind it. Every public form sits behind Turnstile with Resend alerts, and an AI advisor on the Anthropic API answers only from published content and links every page it cites.
+
+> The interesting constraint: the editors are not technical, and the usual paid map layers were off the table. Every routine change has to work in Sanity Studio without a developer, so the optional catalogues (homes, commercial, vehicles, guides) get no header link or sitemap entry until an editor publishes the first document of that kind. Esri's free satellite tier bars revenue-generating apps and Mapbox's terms name real estate as needing a paid licence, so the maps run on self-hosted Protomaps tiles on R2, with no third party in the request path.
+
 ### [Joan K. Muthoni — Portfolio](https://joanmuthoni.co.ke/)
 ![Next.js 16](https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React 19](https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=000000) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS 4](https://img.shields.io/badge/Tailwind%20CSS%204-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Upstash Redis](https://img.shields.io/badge/Upstash%20Redis-00E9A3?style=flat-square&logo=upstash&logoColor=000000) ![Resend](https://img.shields.io/badge/Resend-000000?style=flat-square&logo=resend&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
@@ -54,6 +61,20 @@ The card behind the QR on my business cards: tap-to-save contact, one-tap call, 
 
 > The interesting constraint: GitHub Pages cannot set response headers and a public tracking endpoint is an open invitation to abuse. So the dashboard uses a signed HttpOnly session cookie instead of a stored password, throttling lives in the Durable Object where it cannot be raced, every page runs a hash-based CSP with no unsafe-inline, and no IP address is ever stored.
 
+### SeePU ContentOS · *In build*
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Claude Code skills](https://img.shields.io/badge/Claude%20Code%20skills-D97757?style=flat-square&logo=anthropic&logoColor=white) ![Postiz API](https://img.shields.io/badge/Postiz%20API-4B5563?style=flat-square) ![Microsoft 365](https://img.shields.io/badge/Microsoft%20365-0078D4?style=flat-square&logo=microsoftoffice&logoColor=white)
+
+Productized AI content generation and multi-platform publishing. SeePU owns the engine, each client owns their output, and that split is written into every client agreement. A new client onboards by copying a template folder, and the engine is not edited. It holds a voice framework, a prompt library, verified platform constraints, SOPs, a validator and a Postiz scheduling client. Engine v0.1: the pilot client, Muthoni's Bake House, is not yet live.
+
+> The interesting constraint: generated content must never go out under a client's name without their sign-off. The scheduler refuses any batch that lacks a named approver, a timestamp and stored evidence of approval, and a rule file stops the engine being changed during onboarding, so the product claim holds or fails loudly.
+
+### KaziFit · *Concept*
+![Next.js 16](https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white) ![Anthropic API](https://img.shields.io/badge/Anthropic%20API-D97757?style=flat-square&logo=anthropic&logoColor=white) ![M-Pesa](https://img.shields.io/badge/M--Pesa-4B5563?style=flat-square)
+
+Application platform for African professionals going for UN, African Union, Africa CDC, INGO and donor roles, priced in KES and paid by M-Pesa. A free, no-signup vacancy check reports what was and was not found about a posting, and the paid layer maps a user's confirmed profile to each requirement before tailoring the CV and cover letter. A specification and a single-file prototype exist; there is no production build and no users yet, and the stack shown is the planned one.
+
+> The interesting constraint: Kenyan job seekers are targeted by recruitment fraud, so the vacancy check never calls a posting or employer safe, legitimate or a scam. It reports the sources checked and what it found and did not find, with no trust score out of 100, and generation draws only on the user's confirmed profile so it cannot invent a credential.
+
 ### Live sites I built and maintain
 
 **[globalthrive.africa](https://globalthrive.africa/)** · Global Thrive Africa
@@ -69,10 +90,10 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 | | |
 |---|---|
 | **AI** | Anthropic Claude, Messages API, tool use, agentic pipelines, Claude Code, GPT-4 |
-| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, WordPress, Resend |
+| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, OpenNext, Cloudflare R2 and D1, MapLibre GL, Turnstile, WordPress, Resend |
 | **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Microsoft Graph, Azure, Intune, Freshservice, Freshdesk |
 | **Identity** | Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory |
-| **Automation** | Python, PowerShell, ARM templates, REST APIs, Wrangler, Power Automate, SharePoint |
+| **Automation** | Python, PowerShell, ARM templates, REST APIs, Wrangler, Postiz, Power Automate, SharePoint |
 | **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker, custom first-party analytics (Upstash Redis, Recharts) |
 | **Security** | Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, web app hardening (CSP, rate limiting, bot filtering, dependency auditing), security headers, SPF/DKIM/DMARC, CISM in progress |
 
