@@ -380,7 +380,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
         <div class="metric">20<small>Countries</small></div>
         <div>
           <h3>Enterprise systems at multi-country scale</h3>
-          <p>NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralized 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 and 3 support for 2,000+ users across 12 African countries at EGPAF. Freshservice and Freshdesk Expert certified through Freshworks University in 2026, with Freshservice running the ITSM day to day.</p>
+          <p>NetSuite ERP, Solver, Journyx, and KProcure administered across a decentralised 20-country environment for an International NGO, employed by Global HQ in New York. Access reviews, segregation of duties, month-end close support, donor compliance. Previously Tier 2 and 3 support for 2,000+ users across 12 African countries at EGPAF. Freshservice and Freshdesk Expert certified through Freshworks University in 2026, with Freshservice running the ITSM day to day.</p>
         </div>
       </div>
 
@@ -388,7 +388,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
         <div class="metric">Live<small>Not notebooks</small></div>
         <div>
           <h3>AI in production</h3>
-          <p>Anthropic Messages API powering a live order assistant with catalog, category, pricing, and checkout tools. Cloudflare Workers running an LLM visitor assistant at the edge. Content and support pipelines on GPT-4 that cut draft time by 70 percent.</p>
+          <p>Anthropic Messages API powering a live order assistant with catalogue, category, pricing, and checkout tools. Cloudflare Workers running an LLM visitor assistant at the edge. Content and support pipelines on GPT-4 that cut draft time by 70 percent.</p>
         </div>
       </div>
 
@@ -414,7 +414,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
 
 <section id="work">
   <div class="wrap">
-    <div class="sec-head"><h2>Selected work</h2><span class="line"></span><span class="tag">Source available</span></div>
+    <div class="sec-head"><h2>Selected work</h2><span class="line"></span><span class="tag">Live and in build</span></div>
     <div class="work">
 
       <div class="proj">
@@ -422,7 +422,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
           <h3><a href="https://www.muthonibakehouse.co.ke/" target="_blank" rel="noopener noreferrer">Muthoni's Bake House (MBH)</a></h3>
         </div>
         <div class="tech"><i>Next.js 16</i><i>React 19</i><i>TypeScript</i><i>Sanity 6</i><i>Anthropic Messages API</i><i>Tool use</i><i>Microsoft Graph Mail</i><i>WhatsApp handoff</i><i>Vercel</i></div>
-        <p>Full-stack bakery storefront and content platform for the Kenyan market. Sanity-backed catalog with KES pricing tiers, client-side cart, and an AI order assistant built on the Anthropic Messages API with tool use for catalog lookup, pricing, and order handoff. Split datasets separate public content from private order and subscriber data. Microsoft Graph Mail for notifications, structured Bakery schema, sitemap, and analytics.</p>
+        <p>Full-stack bakery storefront and content platform for the Kenyan market. Sanity-backed catalogue with KES pricing tiers, client-side cart, and an AI order assistant built on the Anthropic Messages API with tool use for catalogue lookup, pricing, and order handoff. Split datasets separate public content from private order and subscriber data. Microsoft Graph Mail for notifications, structured Bakery schema, sitemap, and analytics.</p>
         <p class="note">The interesting constraint: card penetration is low and cart abandonment at a payment wall is high, so checkout hands off to WhatsApp where the customer already is. M-Pesa Daraja is on the roadmap. Designing for the payment rails people actually use is the difference between a working store and a portfolio piece.</p>
       </div>
 
@@ -440,7 +440,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
           <h3><a href="https://joanmuthoni.co.ke/" target="_blank" rel="noopener noreferrer">Joan K. Muthoni, Portfolio</a></h3>
         </div>
         <div class="tech"><i>Next.js 16</i><i>React 19</i><i>TypeScript</i><i>Tailwind CSS 4</i><i>Upstash Redis</i><i>Resend</i><i>Vercel</i></div>
-        <p>Personal portfolio for Joan K. Muthoni, executive support and customer operations for local and international teams, from Nairobi. A digital business card with save-to-contacts and one-tap call, WhatsApp, email and LinkedIn, a QR flow feeding a private analytics dashboard (QR scans vs direct visits, button taps, device, country and a recent-activity feed, with no IPs stored), and Resend-powered resume requests.</p>
+        <p>Personal portfolio for Joan K. Muthoni, executive support and customer operations for local and international teams, from Nairobi. A digital business card with save-to-contacts and one-tap call, WhatsApp, email and LinkedIn, a QR flow feeding a private analytics dashboard (QR scans against direct visits, button taps, device, country and a recent-activity feed, with no IPs stored), and Resend-powered resume requests.</p>
         <p class="note">The interesting constraint: the card's whole job is handing a stranger your phone number and email, but the same one-tap tel: and mailto: links that make it usable are exactly the shape every plaintext-scraping bot regexes for. Contact details ship as base64 and decode client-side on click, so neither the HTML nor the JS bundles contain them in plain text, and robots.txt shuts crawlers out of the card entirely. Each button also has a server-side redirect fallback so it still works before hydration and inside in-app browsers; that redirect, the vCard and the tracking beacon refuse known bots and cross-site requests. The login (5/min and 20/hr per IP), the beacon and the resume form are rate-limited, a Redis outage degrades to in-memory limits instead of locking anyone out, and npm audit reports zero production vulnerabilities.</p>
       </div>
 
@@ -458,7 +458,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
         </div>
         <div class="tech"><i>Cloudflare Workers</i><i>Durable Objects (SQLite)</i><i>Workers KV</i><i>GitHub Pages</i><i>Cloudflare Transform Rules</i><i>WebCrypto HMAC</i><i>Hash-based CSP</i></div>
         <p>The card behind the QR on my business cards: tap-to-save contact, one-tap call, WhatsApp, email, LinkedIn and GitHub, and a private dashboard with all-time scans, button taps, country, city and device. A Cloudflare Worker feeds a SQLite-backed Durable Object for atomic counters, with a KV event log for the activity feed.</p>
-        <p class="note">The interesting constraint: GitHub Pages cannot set response headers and a public tracking endpoint is an open invitation to abuse. So the dashboard uses a signed HttpOnly session cookie instead of a stored password, throttling lives in the Durable Object where it cannot be raced, every page runs a hash-based CSP with no unsafe-inline, and no IP address is ever stored.</p>
+        <p class="note">The interesting constraint: GitHub Pages cannot set response headers, and a public tracking endpoint is an open invitation to abuse. So the dashboard uses a signed HttpOnly session cookie instead of a stored password, throttling lives in the Durable Object where it cannot be raced, every page runs a hash-based CSP with no unsafe-inline, and no IP address is ever stored.</p>
       </div>
       <div class="proj">
         <div class="proj-top">
@@ -466,7 +466,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
           <span class="status">In build</span>
         </div>
         <div class="tech"><i>Node.js</i><i>Claude Code skills</i><i>Postiz API</i><i>Microsoft 365</i><i>GA4</i><i>Looker Studio</i></div>
-        <p>Productized AI content generation and multi-platform publishing. SeePU owns the engine, each client owns their output, and that split is written into every client agreement. A new client onboards by copying a template folder, and the engine is not edited. It holds a voice framework, a prompt library, verified platform constraints, SOPs, a validator and a Postiz scheduling client. Engine v0.1: the pilot client, Muthoni's Bake House, is not yet live.</p>
+        <p>Productised AI content generation and multi-platform publishing. SeePU owns the engine, each client owns their output, and that split is written into every client agreement. A new client onboards by copying a template folder, and the engine is not edited. It holds a voice framework, a prompt library, verified platform constraints, SOPs, a validator and a Postiz scheduling client. Engine v0.1: the pilot client, Muthoni's Bake House, is not yet live.</p>
         <p class="note">The interesting constraint: generated content must never go out under a client's name without their sign-off. The scheduler refuses any batch that lacks a named approver, a timestamp and stored evidence of approval, and a rule file stops the engine being changed during onboarding, so the product claim holds or fails loudly.</p>
       </div>
 
@@ -476,7 +476,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
           <span class="status">Concept</span>
         </div>
         <div class="tech"><i>Next.js 16</i><i>TypeScript</i><i>Supabase</i><i>Anthropic API</i><i>M-Pesa</i><i>Vercel</i></div>
-        <p>Application platform for African professionals going for UN, African Union, Africa CDC, INGO and donor roles, priced in KES and paid by M-Pesa. A free, no-signup vacancy check reports what was and was not found about a posting, and the paid layer maps a user's confirmed profile to each requirement before tailoring the CV and cover letter. A specification and a single-file prototype exist; there is no production build and no users yet, and the stack shown is the planned one.</p>
+        <p>Application platform for African professionals applying for UN, African Union, Africa CDC, INGO and donor roles, priced in KES and paid by M-Pesa. A free, no-signup vacancy check reports what was and was not found about a posting, and the paid layer maps a user's confirmed profile to each requirement before tailoring the CV and cover letter. A specification and a single-file prototype exist; there is no production build and no users yet, and the stack shown is the planned one.</p>
         <p class="note">The interesting constraint: Kenyan job seekers are targeted by recruitment fraud, so the vacancy check never calls a posting or employer safe, legitimate or a scam. It reports the sources checked and what it found and did not find, with no trust score out of 100, and generation draws only on the user's confirmed profile so it cannot invent a credential.</p>
       </div>
     </div>
@@ -495,7 +495,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
       <div class="live">
         <h3><a href="https://africii.org/" target="_blank" rel="noopener noreferrer">AFRICII.ORG</a></h3>
         <span>AFRICII</span>
-        <p>Mission-driven NGO platform with clear program pages, resource sections, and a flexible CMS backend, so the team publishes projects and updates without a developer on call.</p>
+        <p>Mission-driven NGO platform with clear programme pages, resource sections, and a flexible CMS backend, so the team publishes projects and updates without a developer on call.</p>
       </div>
     </div>
   </div>
@@ -517,11 +517,11 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
       </div>
 
       <div class="stop">
-        <div class="when"><b>2025 &rarr; 2026</b><span>UN &middot; Remote to Cairo-Egypt</span></div>
+        <div class="when"><b>2025 &rarr; 2026</b><span>UN &middot; Remote to Cairo, Egypt</span></div>
         <div>
           <h3>Technical and Administrative Support</h3>
           <p class="org">World Health Organization (WHO), Eastern Mediterranean Regional Office</p>
-          <p class="did">UN2720 and COGAT approval workflows on compliance-critical humanitarian access processes. Centralized filing, approval-timeline tracking, and weekly reporting built to stay audit-ready. Twelve weeks at 20 hours, recognized with a UNV Certificate of Appreciation.</p>
+          <p class="did">UN2720 and COGAT approval workflows on compliance-critical humanitarian access processes. Centralised filing, approval-timeline tracking, and weekly reporting built to stay audit-ready. Twelve weeks at 20 hours, recognised with a UNV Certificate of Appreciation.</p>
           <div class="chips"><i>UN2720</i><i>COGAT</i><i>Compliance workflow</i><i>Audit readiness</i></div>
         </div>
       </div>
@@ -531,7 +531,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
         <div>
           <h3>Co-founder & Technology Lead</h3>
           <p class="org">Global Thrive Africa (GTA)</p>
-          <p class="did">Youth Mentorship & Parenting Education, co-founded & still running. I built the whole technology side: the platform, the CMS the team manages themselves, the social presence, and the analytics. Then I mentor on it. Building for young people on mobile data and mentoring the same people is the tightest feedback loop I have, and it is where most of my instincts about designing for constraint were formed.</p>
+          <p class="did">Youth mentorship and parenting education, co-founded and still running. I built the whole technology side: the platform, the CMS the team manages themselves, the social presence, and the analytics. Then I mentor on it. Building for young people on mobile data and mentoring the same people is the tightest feedback loop I have, and it is where most of my instincts about designing for constraint were formed.</p>
           <div class="chips"><i>Co-founder</i><i>Platform build</i><i>WordPress CMS</i><i>Social and content</i><i>Youth mentorship</i></div>
         </div>
       </div>
@@ -541,7 +541,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
         <div>
           <h3>Regional IT Support Analyst</h3>
           <p class="org">Elizabeth Glaser Pediatric AIDS Foundation</p>
-          <p class="did">Tier 2 & 3 across Kenya, Nigeria, Lesotho, Zimbabwe, Mozambique, Uganda, Cameroon, Côte d'Ivoire, DRC, and Eswatini for 2,000+ users. Identity in Active Directory, Microsoft 365, and OKTA. SharePoint automation shipped in four countries. Encryption, backup, and security audits enforced against real bandwidth constraints.</p>
+          <p class="did">Tier 2 and 3 support across Kenya, Nigeria, Lesotho, Zimbabwe, Mozambique, Uganda, Cameroon, Côte d'Ivoire, DRC, and Eswatini for 2,000+ users. Identity in Active Directory, Microsoft 365, and OKTA. SharePoint automation shipped in four countries. Encryption, backup, and security audits enforced against real bandwidth constraints.</p>
           <div class="chips"><i>Active Directory</i><i>OKTA</i><i>Microsoft 365</i><i>SharePoint Automation</i><i>Unit4 ERP</i><i>ZohoDesk</i></div>
         </div>
       </div>
@@ -612,7 +612,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
 <section class="beyond">
   <div class="wrap">
     <div class="sec-head"><h2>Beyond the code</h2><span class="line"></span><span class="tag">Documentary</span></div>
-    <p>My documentary photography has been published by the <a href="https://news.un.org/sw/story/2024/02/1171737" target="_blank" rel="noopener noreferrer">United Nations</a>, <a href="https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&amp;isAllowed=y" target="_blank" rel="noopener noreferrer">WHO</a>, and <a href="https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf" target="_blank" rel="noopener noreferrer">EGPAF</a>. Same instinct as the engineering work: understand the people before you build the system. Professional portfolio at <a href="https://kahuna.photos/" target="_blank" rel="noopener noreferrer">kahuna.photos</a>.</p>
+    <p>My documentary photography has been published by the <a href="https://news.un.org/sw/story/2024/02/1171737" target="_blank" rel="noopener noreferrer">United Nations</a>, <a href="https://iris.who.int/bitstream/handle/10665/342928/9789240031371-eng.pdf?sequence=1&amp;isAllowed=y" target="_blank" rel="noopener noreferrer">WHO</a>, and <a href="https://www.pedaids.org/wp-content/uploads/2019/07/2019JUAStoryBooklet.pdf" target="_blank" rel="noopener noreferrer">EGPAF</a>. Same instinct as the engineering work: understand the people before you build the system. My professional photography portfolio is at <a href="https://kahuna.photos/" target="_blank" rel="noopener noreferrer">kahuna.photos</a>.</p>
   </div>
 </section>
 
@@ -633,7 +633,7 @@ a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-ink);outline-o
   </div>
 </section>
 
-<footer><div class="wrap">© Gibson Kabugi | 2011 - 2026 &middot; Built & Maintained in Nairobi</div></footer>
+<footer><div class="wrap">© 2011 to 2026 Gibson Kabugi &middot; Built and maintained in Nairobi</div></footer>
 
 <script>
 (function(){
