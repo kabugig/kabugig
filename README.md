@@ -6,7 +6,7 @@ Enterprise ERP across 20 countries by day. AI-enabled products and growth infras
 
 Most AI engineering happens on fast connections with cheap compute and mature payment rails. Mine does not. That constraint makes the work better.
 
-[gibson.seepu.co.ke](https://gibson.seepu.co.ke) · [LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · [Digital card](https://gibson.seepu.co.ke/card/) · [Photography](https://kahuna.photos/) · gibson@seepu.co.ke
+[gibson.seepu.co.ke](https://gibson.seepu.co.ke) · [LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · [Digital card](https://gibson.seepu.co.ke/card/) · [Photography](https://kahuna.photos/)
 
 ---
 
@@ -123,4 +123,4 @@ Nairobi · UTC+3
 
 Open to conversations about AI engineering, digital transformation, and enterprise systems roles, particularly where emerging market context is an asset rather than a footnote.
 
-[gibson@seepu.co.ke](mailto:gibson@seepu.co.ke) · [LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · [Digital card](https://gibson.seepu.co.ke/card/) · [Photography](https://kahuna.photos/) · [+254 726 659 469](tel:+254726659469)
+[LinkedIn](https://www.linkedin.com/in/gibson-kabugi-9b043250/) · [seepu.co.ke](https://seepu.co.ke) · [Digital card](https://gibson.seepu.co.ke/card/) · [Photography](https://kahuna.photos/)

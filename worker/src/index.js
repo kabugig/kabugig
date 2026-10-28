@@ -133,10 +133,9 @@ export class Stats extends DurableObject {
     return true;
   }
 
-  /* read-only check, used before verifying a password */
-  async blocked(key, max) {
-    const row = this.sql.exec('SELECT n, reset_at FROM rl WHERE k = ?', key).toArray()[0];
-    return !!row && row.reset_at > Date.now() && row.n >= max;
+  /* gives back one unit, used when a login that was counted up front succeeds */
+  async refund(key) {
+    this.sql.exec('UPDATE rl SET n = MAX(n - 1, 0) WHERE k = ?', key);
   }
 
   bump(day, kind, key) {
@@ -261,16 +260,18 @@ async function login(request, env) {
   const store = counters(env);
   const who = 'f:' + (await clientKey(request, env));
 
-  if (await store.blocked(who, LIMITS.loginFail.max)) {
+  // Count the attempt before checking it. Checking first and counting after left a gap
+  // in which a burst of parallel guesses all passed the check; one atomic take closes it.
+  if (!(await store.take(who, LIMITS.loginFail.max, LIMITS.loginFail.windowMs))) {
     return json({ error: 'too many attempts, try again later' }, 429, { 'retry-after': '900' });
   }
 
   const body = await readBody(request);
   const password = body && typeof body.password === 'string' ? body.password : '';
   if (!password || !(await safeEqual(password, env.DASH_PASSWORD))) {
-    await store.take(who, LIMITS.loginFail.max, LIMITS.loginFail.windowMs);
     return json({ error: 'wrong password' }, 401);
   }
+  await store.refund(who); // a correct password does not use up the allowance
   return empty(204, { 'set-cookie': cookieHeader(await issueSession(env), SESSION_SECONDS) });
 }
 

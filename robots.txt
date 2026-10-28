@@ -2,18 +2,36 @@ User-agent: *
 Allow: /
 Disallow: /dashboard/
 Disallow: /api/
+Disallow: /card/
+Disallow: /qr/
 
 # AI crawlers, explicitly welcomed for AEO/GEO discoverability
 User-agent: GPTBot
 Allow: /
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /card/
+Disallow: /qr/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /card/
+Disallow: /qr/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /card/
+Disallow: /qr/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /card/
+Disallow: /qr/
 
 Sitemap: https://gibson.seepu.co.ke/sitemap.xml
