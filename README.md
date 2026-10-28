@@ -90,10 +90,10 @@ Mission-driven NGO platform with clear program pages, resource sections, and a f
 | | |
 |---|---|
 | **AI** | Anthropic Claude, Messages API, tool use, agentic pipelines, Claude Code, GPT-4 |
-| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, OpenNext, Cloudflare R2 and D1, MapLibre GL, Turnstile, WordPress, Resend |
+| **Web** | Next.js, React, TypeScript, Tailwind, Sanity, Cloudflare Workers, Durable Objects, Workers KV, Upstash Redis, Vercel, GitHub Pages, OpenNext, Cloudflare R2 and D1, MapLibre GL, Protomaps, GSAP, Turnstile, WordPress, Resend |
 | **Enterprise** | NetSuite, Solver, Journyx, KProcure, Unit4, Microsoft 365, Microsoft Graph, Azure, Intune, Freshservice, Freshdesk |
 | **Identity** | Entra ID, Azure RBAC, Azure Policy, OKTA, Active Directory |
-| **Automation** | Python, PowerShell, ARM templates, REST APIs, Wrangler, Postiz, Power Automate, SharePoint |
+| **Automation** | Python, Node.js, PowerShell, ARM templates, REST APIs, Wrangler, Postiz, Power Automate, SharePoint |
 | **Data** | Power BI, SuiteAnalytics, GA4, Search Console, Looker, custom first-party analytics (Upstash Redis, Recharts) |
 | **Security** | Microsoft Purview, Defender XDR, NIST CSF, CII/CIP, SOPHOS, access reviews, web app hardening (CSP, rate limiting, bot filtering, dependency auditing), security headers, SPF/DKIM/DMARC, CISM in progress |
 
