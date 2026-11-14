@@ -68,10 +68,10 @@ Productised AI content generation and multi-platform publishing, live since 1 No
 
 > The interesting constraint: generated content must never go out under a client's name without a named approver's sign-off. The scheduler refuses a batch whose approver is not named in that client's config and recorded in the approval log, a post or image changed after approval, and any channel outside that client's own list, so one client's post cannot land on another's account. A rule file keeps client detail out of the engine, so the product claim holds or fails loudly.
 
-### KaziFit · *Concept*
+### KaziFit · *In development*
 ![Next.js 16](https://img.shields.io/badge/Next.js%2016-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white) ![Anthropic API](https://img.shields.io/badge/Anthropic%20API-D97757?style=flat-square&logo=anthropic&logoColor=white) ![M-Pesa](https://img.shields.io/badge/M--Pesa-4B5563?style=flat-square)
 
-Application platform for African professionals applying for UN, African Union, Africa CDC, INGO and donor roles, priced in KES and paid by M-Pesa. A free, no-signup vacancy check reports what was and was not found about a posting, and the paid layer maps a user's confirmed profile to each requirement before tailoring the CV and cover letter. A specification and a single-file prototype exist; there is no production build and no users yet, and the stack shown is the planned one.
+Application platform for African professionals applying for UN, African Union, Africa CDC, INGO and donor roles, priced in KES and paid by M-Pesa. A free, no-signup vacancy check reports what was and was not found about a posting, and the paid layer maps a user's confirmed profile to each requirement before tailoring the CV and cover letter. The production build is now in development, on the stack shown.
 
 > The interesting constraint: Kenyan job seekers are targeted by recruitment fraud, so the vacancy check never calls a posting or employer safe, legitimate or a scam. It reports the sources checked and what it found and did not find, with no trust score out of 100, and generation draws only on the user's confirmed profile so it cannot invent a credential.
 
